@@ -137,9 +137,8 @@ final class AppEnvironment: StatusMenuActions {
     /// the selection with ⌘C (it would read or clobber the clipboard mid-paste).
     private var pastingAnswer = false
     /// Set when the executed download plan contained Whisper: its first load compiles the CoreML
-    /// model for this Mac (~3 min), so the status must say so instead of looking stuck.
+    /// model for this Mac (~3 min), so the status explains the wait from the start (`ModelLoadNotice`).
     private var whisperNeedsFirstLoad = false
-    static let whisperFirstLoadMessage = String(localized: "Optimizing the voice model for this Mac (first time only, ~3 min)…")
 
     init(updater: Updater) {
         self.updater = updater
@@ -306,15 +305,18 @@ final class AppEnvironment: StatusMenuActions {
             state.status = .preparing(String(localized: "Preparing models…"))
         }
         if whisperNeedsFirstLoad {
-            state.status = .preparing(Self.whisperFirstLoadMessage)
             appLog("first Whisper load after download (CoreML compiles the model once)")
         }
         processor.onProgress = { [weak self] fraction in
             Task { @MainActor in
                 guard let self, case .preparing = self.state.status else { return }
+                self.state.loadStartedAt = nil // the download percentage replaces the load notice
                 self.state.status = .preparing(String(localized: "Downloading the text model… \(Int(fraction * 100))%"))
             }
         }
+        state.loadIsKnownFirst = whisperNeedsFirstLoad
+        state.loadStartedAt = Date()
+        defer { state.loadStartedAt = nil }
         do {
             try await residency.ensureLoaded()
             whisperNeedsFirstLoad = false

@@ -330,7 +330,8 @@
 "Open at login" = "Abrir al iniciar sesión";
 
 /* AppEnvironment */
-"Optimizing the voice model for this Mac (first time only, ~3 min)…" = "Optimizando el modelo de voz para este Mac (solo la primera vez, ~3 min)…";
+"Preparing the models for this Mac (usually only the first time; up to 3 minutes)… %@" = "Preparando los modelos para este Mac (normalmente solo la primera vez; hasta 3 minutos)… %@";
+"Still preparing the models for this Mac… %@" = "Todavía preparando los modelos para este Mac… %@";
 
 /* ModelSetupWindow */
 "Organize the text" = "Organizar el texto";

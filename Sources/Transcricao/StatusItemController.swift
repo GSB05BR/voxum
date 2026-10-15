@@ -91,7 +91,7 @@ final class StatusItemController: NSObject, NSMenuDelegate {
         file.isEnabled = !state.setupPending
         menu.addItem(file)
         menu.addItem(.separator())
-        menu.addItem(disabled(state.statusText))
+        menu.addItem(disabled(state.statusText()))
         let memory = disabled(state.memoryTitle)
         memory.image = state.memory.dot
         menu.addItem(memory)

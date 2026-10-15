@@ -5,7 +5,7 @@ import TranscricaoEngines
 
 /// Screenshots of the answer panel and the undo pill without dictating:
 ///
-///     VOXUM_DEBUG_SHOW_PANEL=tour|short|long|huge|thinking|error|question|question-thinking|undo|hud|hud-question|hud-processing|main|main-bottom|credits|notices|file|file-progress|file-organized|file-summary|file-organizing|file-noai|file-error|file-language \
+///     VOXUM_DEBUG_SHOW_PANEL=tour|short|long|huge|thinking|error|question|question-thinking|undo|hud|hud-question|hud-processing|main|main-loading|main-bottom|credits|notices|file|file-progress|file-organized|file-summary|file-organizing|file-noai|file-error|file-language \
 ///         [VOXUM_DEBUG_APPEARANCE=light|dark] [VOXUM_DEBUG_SNAPSHOT_DIR=<dir>] \
 ///         build/Voxum.app/Contents/MacOS/Voxum
 ///
@@ -67,7 +67,7 @@ enum DebugShowcase {
         }
         appLog("debug showcase '\(mode)' (nothing else started)")
         let visible = visibleFrame
-        if mode == "main" || mode == "main-bottom" {
+        if mode == "main" || mode == "main-loading" || mode == "main-bottom" {
             // Opening the window marks it as shown in the preferences: only in a dev data dir.
             guard ModelLocations.dataDirOverride != nil else {
                 appLog("debug showcase '\(mode)' needs \(AppIdentity.env("DATA_DIR")) (it writes preferences)")
@@ -76,6 +76,10 @@ enum DebugShowcase {
             }
             let state = AppState()
             state.status = .ready
+            if mode == "main-loading" { // a slow first load, 1:05 in: the notice, its clock and the bar
+                state.status = .preparing(String(localized: "Preparing models…"))
+                state.loadStartedAt = Date().addingTimeInterval(-65)
+            }
             state.micGranted = true
             state.accessibilityGranted = true
             let actions = InertMenuActions()

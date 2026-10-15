@@ -312,8 +312,17 @@ private struct MainWindowView: View {
             Image(nsImage: NSApp.applicationIconImage)
                 .resizable().frame(width: 64, height: 64)
             Text(AppIdentity.name).font(.title.weight(.semibold))
-            Text(state.statusText).font(.callout).foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
+            if state.loadStartedAt != nil {
+                // Redrawn every second so the clock of a slow first load keeps running.
+                TimelineView(.periodic(from: .now, by: 1)) { context in
+                    statusLine(state.statusText(now: context.date))
+                }
+            } else {
+                statusLine(state.statusText())
+            }
+            if state.showsLoadingBar && !downloads.isRunning {
+                ProgressView().progressViewStyle(.linear).frame(maxWidth: 240)
+            }
             Label {
                 Text(state.memoryTitle)
             } icon: {
@@ -326,6 +335,11 @@ private struct MainWindowView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.top, 20).padding(.horizontal, 20)
+    }
+
+    private func statusLine(_ text: String) -> some View {
+        Text(text).font(.callout).foregroundStyle(.secondary)
+            .multilineTextAlignment(.center)
     }
 
     /// Automatic updates (Sparkle). Development builds and builds without the update key show the
