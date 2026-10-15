@@ -35,7 +35,7 @@
          (see docs/RELEASING.md); while it is the placeholder the updater does not start and
          release builds are refused. -->
     <key>SUFeedURL</key><string>https://github.com/GSB05BR/voxum/releases/latest/download/appcast.xml</string>
-    <key>SUPublicEDKey</key><string>REPLACE_WITH_SPARKLE_PUBLIC_ED_KEY</string>
+    <key>SUPublicEDKey</key><string>6WTVt3mk9HXXhqBAd+lvSDPi3engh8U3CKbGjZPSTyE=</string>
     <key>SUEnableAutomaticChecks</key><true/>
     <key>SUScheduledCheckInterval</key><integer>86400</integer>
     <!-- Check the EdDSA signature of a downloaded update before unarchiving it. -->
