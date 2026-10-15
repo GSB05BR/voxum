@@ -1,0 +1,128 @@
+[
+  {
+    "id": "luciana-01",
+    "audio": "luciana-01.wav",
+    "voice": "Luciana",
+    "ref": "Preciso pagar mil duzentos e cinquenta reais de aluguel até o dia cinco.",
+    "alts": [
+      "Preciso pagar R$ 1.250 de aluguel até o dia 5.",
+      "Preciso pagar 1.250 reais de aluguel até o dia 5."
+    ]
+  },
+  {
+    "id": "luciana-02",
+    "audio": "luciana-02.wav",
+    "voice": "Luciana",
+    "ref": "O Rafael vai viajar para Belo Horizonte na próxima quinta-feira."
+  },
+  {
+    "id": "luciana-03",
+    "audio": "luciana-03.wav",
+    "voice": "Luciana",
+    "ref": "Abri uma conta no Itaú para receber o salário."
+  },
+  {
+    "id": "luciana-04",
+    "audio": "luciana-04.wav",
+    "voice": "Luciana",
+    "ref": "A ação de conservação da natureza exige atenção, paciência e dedicação."
+  },
+  {
+    "id": "luciana-05",
+    "audio": "luciana-05.wav",
+    "voice": "Luciana",
+    "ref": "Você já enviou o relatório para a diretoria?"
+  },
+  {
+    "id": "luciana-06",
+    "audio": "luciana-06.wav",
+    "voice": "Luciana",
+    "ref": "Marca a reunião para terça às três, não, quis dizer quarta às três da tarde."
+  },
+  {
+    "id": "luciana-07",
+    "audio": "luciana-07.wav",
+    "voice": "Luciana",
+    "ref": "Então, tipo, eu acho que a gente precisa, né, revisar o contrato antes de assinar."
+  },
+  {
+    "id": "luciana-08",
+    "audio": "luciana-08.wav",
+    "voice": "Luciana",
+    "ref": "Ontem à noite a equipe de desenvolvimento terminou a primeira versão do aplicativo, e hoje de manhã começamos a testar tudo com os clientes que já pediram acesso antecipado."
+  },
+  {
+    "id": "luciana-09",
+    "audio": "luciana-09.wav",
+    "voice": "Luciana",
+    "ref": "O pedido número trinta e sete mil quatrocentos e vinte e um foi entregue em São Paulo.",
+    "alts": [
+      "O pedido número 37.421 foi entregue em São Paulo."
+    ]
+  },
+  {
+    "id": "luciana-10",
+    "audio": "luciana-10.wav",
+    "voice": "Luciana",
+    "ref": "Não esqueça de comprar feijão, açúcar, café e pão de queijo no mercado."
+  },
+  {
+    "id": "luciana-11",
+    "audio": "luciana-11.wav",
+    "voice": "Luciana",
+    "ref": "A criança brincou no jardim enquanto a mãe preparava o almoço."
+  },
+  {
+    "id": "luciana-12",
+    "audio": "luciana-12.wav",
+    "voice": "Luciana",
+    "ref": "Quanto custa uma passagem de ônibus de Curitiba até Florianópolis?"
+  },
+  {
+    "id": "eddy-01",
+    "audio": "eddy-01.wav",
+    "voice": "Eddy",
+    "ref": "A Mariana ligou da Caixa Econômica para confirmar o financiamento de trezentos mil reais.",
+    "alts": [
+      "A Mariana ligou da Caixa Econômica para confirmar o financiamento de R$ 300.000.",
+      "A Mariana ligou da Caixa Econômica para confirmar o financiamento de 300 mil reais."
+    ]
+  },
+  {
+    "id": "eddy-02",
+    "audio": "eddy-02.wav",
+    "voice": "Eddy",
+    "ref": "Hum, deixa eu ver, o prazo termina dia vinte e oito de fevereiro, né.",
+    "alts": [
+      "Hum, deixa eu ver, o prazo termina dia 28 de fevereiro, né."
+    ]
+  },
+  {
+    "id": "flo-01",
+    "audio": "flo-01.wav",
+    "voice": "Flo",
+    "ref": "Qual é a melhor hora para a gente falar com o Rafael sobre o orçamento?"
+  },
+  {
+    "id": "flo-02",
+    "audio": "flo-02.wav",
+    "voice": "Flo",
+    "ref": "Enviei o e-mail para o João, não, quis dizer para a Joana, com os documentos em anexo."
+  },
+  {
+    "id": "flo-03",
+    "audio": "flo-03.wav",
+    "voice": "Flo",
+    "ref": "A reunião de planejamento do segundo semestre foi adiada para depois das férias coletivas, porque metade do time estará fora do escritório durante toda a semana."
+  },
+  {
+    "id": "eddy-03",
+    "audio": "eddy-03.wav",
+    "voice": "Eddy",
+    "ref": "Fomos ao Mercado Livre buscar três cadeiras, duas mesas e uma geladeira por oito mil e novecentos reais.",
+    "alts": [
+      "Fomos ao Mercado Livre buscar 3 cadeiras, 2 mesas e uma geladeira por R$ 8.900.",
+      "Fomos ao Mercado Livre buscar 3 cadeiras, 2 mesas e uma geladeira por 8.900 reais."
+    ]
+  }
+]

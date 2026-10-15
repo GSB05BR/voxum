@@ -1,0 +1,23 @@
+[
+  {
+    "id": "tingting-01",
+    "audio": "tingting-01.wav",
+    "voice": "Tingting",
+    "ref": "李伟下周三要去深圳参加一个技术大会。"
+  },
+  {
+    "id": "tingting-02",
+    "audio": "tingting-02.wav",
+    "voice": "Tingting",
+    "ref": "这个月的房租是三千五百块，记得在十号之前转账。",
+    "alts": [
+      "这个月的房租是3500块，记得在10号之前转账。"
+    ]
+  },
+  {
+    "id": "tingting-03",
+    "audio": "tingting-03.wav",
+    "voice": "Tingting",
+    "ref": "你能不能把明天会议的资料发到我的邮箱？"
+  }
+]

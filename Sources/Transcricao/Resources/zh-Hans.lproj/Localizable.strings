@@ -1,0 +1,633 @@
+/* 简体中文 (zh-Hans). Keys are the English source text from the code; the comment names the file(s) using it.
+   The app name is never written here: it comes in as a %@ argument (AppIdentity.name). */
+
+/* AppEnvironment */
+"%@ (%@)" = "%@（%@）";
+
+/* AppLanguage (dictation picker: a language still in beta) */
+"%@ (beta)" = "%@（测试版）";
+
+/* AppEnvironment */
+"%@ (with “No AI”, the text model also counts as unused)" = "%@（选择“不使用 AI”时，文本模型也算作未使用）";
+
+/* AppEnvironment */
+"%@ and %@" = "%@ 和 %@";
+
+/* AnswerPanel */
+"%@ is answering about the selected text" = "%@ 正在根据所选文本作答";
+
+/* AppEnvironment */
+"%@ needs ~%@ (plus a margin of %@); free on disk: %@. Free up space and try again." = "%@ 需要约 %@（另加 %@ 余量）；磁盘可用空间：%@。请释放空间后重试。";
+
+/* ModelCatalog */
+"%@ of %@" = "%@ / %@";
+
+/* AppEnvironment */
+"%@ was busy (dictation, download or model switch). Try again in a moment." = "%@ 正忙（正在听写、下载或切换模型），请稍后再试。";
+
+/* AnswerPanel */
+"%@ — answer" = "%@ — 回答";
+
+/* ModelResidency */
+"%lld min" = "%lld 分钟";
+
+/* MainWindow */
+"%lld on disk, freeing %@. The models in use are never deleted." = "磁盘上有 %lld 个，可释放 %@。正在使用的模型不会被删除。";
+
+/* AppDelegate */
+"About %@" = "关于 %@";
+
+/* AnswerPanel */
+"About the selected text" = "关于所选文本";
+
+/* MainWindow */
+"Accessibility" = "辅助功能";
+
+/* MainWindow */
+"Allowed" = "已允许";
+
+/* MainWindow */
+"Allow…" = "允许…";
+
+/* ModelSetupWindow */
+"already downloaded" = "已下载";
+
+/* AnswerPanel */
+"Answer" = "回答";
+
+/* AnswerPanel */
+"Answer ready" = "回答已就绪";
+
+/* AnswerPanel */
+"Answering…" = "正在回答…";
+
+/* MainWindow, StatusItemController */
+"App language" = "App 语言";
+
+/* AppLanguage */
+"Automatic" = "自动";
+
+/* AppEnvironment, MainWindow, ModelSetupWindow */
+"Cancel" = "取消";
+
+/* StatusItemController */
+"Cancel download" = "取消下载";
+
+/* StatusItemController */
+"Choose models…" = "选择模型…";
+
+/* AppEnvironment */
+"Choose the models first" = "请先选择模型";
+
+/* AppEnvironment */
+"Choose the models to get started" = "选择模型以开始使用";
+
+/* ModelSetupWindow */
+"Choose your models" = "选择你的模型";
+
+/* AppEnvironment */
+"Click in a text box and tap Paste" = "点按文本框，然后点按“粘贴”";
+
+/* AnswerPanel, AppDelegate */
+"Close" = "关闭";
+
+/* AnswerPanel */
+"Close (Esc)" = "关闭（Esc）";
+
+/* MainWindow */
+"Commands like “write a message…” generate the text for you." = "像“写一条消息…”这样的指令会为你生成文本。";
+
+/* RecordingHUD */
+"continuous" = "连续";
+
+/* RecordingHUD */
+"continuous · editing selection" = "连续 · 正在编辑所选内容";
+
+/* AnswerPanel */
+"Copied" = "已拷贝";
+
+/* AnswerPanel */
+"Copy" = "拷贝";
+
+/* MainWindow */
+"Copy raw" = "拷贝原文";
+
+/* MainWindow */
+"Copy text" = "拷贝文本";
+
+/* AnswerPanel */
+"Copy the answer and close" = "拷贝回答并关闭";
+
+/* AudioFileLoader */
+"Couldn't allocate the audio buffer." = "无法分配音频缓冲区。";
+
+/* SelectionEdit */
+"Couldn't answer right now. Try again." = "暂时无法回答，请重试。";
+
+/* AudioFileLoader */
+"Couldn't convert the audio: %@" = "无法转换音频：%@";
+
+/* AppEnvironment */
+"couldn't download the models" = "无法下载模型";
+
+/* SelectionEdit */
+"Couldn't edit the text" = "无法编辑文本";
+
+/* DictationPipeline */
+"Couldn't load the models." = "无法载入模型。";
+
+/* DictationStatus */
+"couldn't prepare the models" = "无法准备模型";
+
+/* SelectionEdit */
+"Couldn't read the selection — speech saved in History" = "无法读取所选内容——语音已存入历史记录";
+
+/* AppEnvironment */
+"Delete" = "删除";
+
+/* AppEnvironment */
+"Delete %lld unused models (%@)?" = "要删除 %lld 个未使用的模型（%@）吗？";
+
+/* AppEnvironment */
+"Delete 1 unused model (%@)?" = "要删除 1 个未使用的模型（%@）吗？";
+
+/* StatusItemController */
+"Delete unused models (%@)…" = "删除未使用的模型（%@）…";
+
+/* MainWindow */
+"Delete…" = "删除…";
+
+/* MainWindow */
+"Deleting…" = "正在删除…";
+
+/* MainWindow, StatusItemController */
+"Dictation key" = "听写按键";
+
+/* MainWindow, StatusItemController */
+"Dictation language" = "听写语言";
+
+/* MainWindow */
+"Double-tap for continuous mode; tap again to finish." = "连按两下进入连续模式；再按一下结束。";
+
+/* ModelSetupWindow */
+"Download and start" = "下载并开始";
+
+/* AppEnvironment */
+"download cancelled" = "下载已取消";
+
+/* ModelDownloads */
+"Download failed (%@)." = "下载失败（%@）。";
+
+/* ModelDownloads */
+"Downloading %@ (%lld of %lld)… %@" = "正在下载 %@（第 %lld 个，共 %lld 个）… %@";
+
+/* ModelDownloads */
+"Downloading %@… %@" = "正在下载 %@… %@";
+
+/* AppEnvironment */
+"Downloading models…" = "正在下载模型…";
+
+/* AppEnvironment */
+"Downloading the text model… %lld%%" = "正在下载文本模型… %lld%%";
+
+/* UndoPill */
+"Edit applied. Undo with ⌘Z." = "已应用编辑。按 ⌘Z 撤销。";
+
+/* RecordingHUD */
+"editing selection" = "正在编辑所选内容";
+
+/* RecordingHUD */
+"Editing selection…" = "正在编辑所选内容…";
+
+/* StatusItemController */
+"Empty" = "空";
+
+/* AppState */
+"Error: %@" = "错误：%@";
+
+/* MainWindow */
+"Esc cancels the recording; afterwards, it stops an edit or answer and closes the panel." = "按 Esc 可取消录音；录音结束后，按 Esc 可停止编辑或回答并关闭面板。";
+
+/* ModelSetupWindow */
+"Everything runs on your Mac. The models are downloaded once and then work without internet." = "一切都在你的 Mac 上运行。模型只需下载一次，之后无需联网即可使用。";
+
+/* AppEnvironment */
+"Finish the dictation to paste." = "请先完成听写再粘贴。";
+
+/* TriggerKey (dictation key picker) */
+"Fn / 🌐 Globe" = "Fn / 🌐 地球仪键";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"Fn/🌐" = "Fn/🌐";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Free memory after inactivity" = "闲置后释放内存";
+
+/* ModelSetupWindow */
+"Free on disk: %@" = "磁盘可用空间：%@";
+
+/* AnswerPanel */
+"Generating answer" = "正在生成回答";
+
+/* AppDelegate */
+"Hide %@" = "隐藏 %@";
+
+/* MainWindow */
+"History" = "历史记录";
+
+/* StatusItemController */
+"History (click copies, ⌥ = raw)" = "历史记录（点按即拷贝，⌥ = 原文）";
+
+/* MainWindow */
+"Hold %@ to speak and release to insert the text." = "按住 %@ 说话，松开即可插入文本。";
+
+/* MainWindow */
+"How to use" = "使用方法";
+
+/* MainWindow, StatusItemController (with the Fn key; macOS's own labels, from System Settings › Keyboard) */
+"If macOS uses 🌐 for dictation or emoji, set “Press 🌐 key to” to “Do Nothing” in System Settings › Keyboard. In Keyboard › Dictation, also change the Shortcut if it is “Press 🌐 Twice”: it clashes with double-tapping Fn. On keyboards with an fn key, the settings say “fn” instead of 🌐." = "如果 macOS 将 🌐 键用于听写或表情符号，请在“系统设置” › “键盘”中将“按下🌐键时”设为“不执行任何操作”。如果“键盘” › “听写”中的“快捷键”是“连按两下🌐”，也请更改：它与连按两下 Fn 冲突。如果键盘上是 fn 键，设置中显示的是“fn”而不是 🌐。";
+
+/* AnswerPanel */
+"Incomplete answer — %@" = "回答不完整——%@";
+
+/* AppEnvironment */
+"Later" = "稍后";
+
+/* ModelMemoryState */
+"Loading models…" = "正在载入模型…";
+
+/* ModelMemoryState */
+"Loading the voice model…" = "正在载入语音模型…";
+
+/* ModelSetupWindow */
+"Memory" = "内存";
+
+/* MainWindow */
+"Microphone" = "麦克风";
+
+/* AppEnvironment */
+"Microphone unavailable" = "麦克风不可用";
+
+/* AppDelegate */
+"Minimize" = "最小化";
+
+/* ModelDownloads */
+"models" = "模型";
+
+/* ModelMemoryState */
+"Models inactive — they load when you dictate (~3 s)" = "模型未载入——听写时自动载入（约 3 秒）";
+
+/* ModelMemoryState */
+"Models loaded in memory" = "模型已载入内存";
+
+/* ModelResidency */
+"Never" = "永不";
+
+/* ModelCatalog */
+"No AI" = "不使用 AI";
+
+/* ModelCatalog */
+"No AI (transcription only)" = "不使用 AI（仅转写）";
+
+/* MainWindow */
+"No AI: the text is pasted as spoken (not organized, no editing of the selection) and the text model is not even loaded. Choose a model above to use the AI." = "不使用 AI：文本按原话粘贴（不整理，也不编辑所选内容），文本模型也不会载入。要使用 AI，请在上方选择一个模型。";
+
+/* MainWindow */
+"No dictations yet." = "还没有听写记录。";
+
+/* ModelDownloads */
+"No internet connection. Check the network and try again." = "没有互联网连接。请检查网络后重试。";
+
+/* MainWindow */
+"None — only the models in use are on disk." = "无——磁盘上只有正在使用的模型。";
+
+/* AppEnvironment */
+"Not enough free space" = "可用空间不足";
+
+/* ModelSetupWindow */
+"Not enough free space. Free up disk space and try again." = "可用空间不足。请释放磁盘空间后重试。";
+
+/* AppEnvironment */
+"Not pasted — answer in History" = "未粘贴——回答已存入历史记录";
+
+/* AppEnvironment */
+"Not undone — couldn't check the text" = "未撤销——无法核对文本";
+
+/* AppEnvironment */
+"Not undone — the text changed after the edit" = "未撤销——编辑后文本已更改";
+
+/* ModelSetupWindow */
+"Nothing to download" = "无需下载";
+
+/* AppEnvironment */
+"Nothing was deleted" = "未删除任何内容";
+
+/* StatusItemController */
+"Open %@…" = "打开 %@…";
+
+/* MainWindow, StatusItemController */
+"Open at login" = "登录时打开";
+
+/* AppEnvironment */
+"Optimizing the voice model for this Mac (first time only, ~3 min)…" = "正在为这台 Mac 优化语音模型（仅首次，约 3 分钟）…";
+
+/* ModelSetupWindow */
+"Organize the text" = "整理文本";
+
+/* MainWindow, StatusItemController */
+"Organize with AI" = "用 AI 整理";
+
+/* AnswerPanel */
+"Paste" = "粘贴";
+
+/* AnswerPanel */
+"Paste the answer where the text cursor is" = "将回答粘贴到文本光标处";
+
+/* ModelSetupWindow */
+"Pastes the text as spoken. No memory beyond the voice model; you can change it later in Settings." = "按原话粘贴文本。除语音模型外不额外占用内存；之后可在“设置”中更改。";
+
+/* MainWindow */
+"Permissions" = "权限";
+
+/* AppEnvironment, AppState */
+"Preparing models…" = "正在准备模型…";
+
+/* AppState, RecordingHUD */
+"Processing…" = "正在处理…";
+
+/* ModelSetupWindow */
+"Punctuates, organizes lists, fixes what you rephrased and edits the selected text by voice. %@." = "添加标点、整理列表、修正你改口的内容，还能用语音编辑所选文本。%@。";
+
+/* StatusItemController */
+"Quit" = "退出";
+
+/* AppDelegate */
+"Quit %@" = "退出 %@";
+
+/* ModelCatalog */
+"Qwen3 4B (recommended)" = "Qwen3 4B（推荐）";
+
+/* StatusItemController */
+"Raw: %@" = "原文：%@";
+
+/* AppState */
+"Ready — hold %@ to dictate" = "就绪——按住 %@ 开始听写";
+
+/* ModelSetupWindow */
+"Recognizes your speech. Required. %@." = "识别你的语音。必需。%@。";
+
+/* AppState */
+"Recording (continuous) — tap %@ to finish" = "正在录音（连续）——按一下 %@ 结束";
+
+/* AppState */
+"Recording…" = "正在录音…";
+
+/* AppState */
+"Reloading models… (you can dictate)" = "正在重新载入模型…（可以听写）";
+
+/* MainWindow, ModelSetupWindow */
+"Reloading the models after they are freed takes about 3 s." = "释放后重新载入模型大约需要 3 秒。";
+
+/* AppEnvironment */
+"Reopen %@ to change the language?" = "要重新打开 %@ 以更改语言吗？";
+
+/* AppEnvironment */
+"Reopen now" = "立即重新打开";
+
+/* StatusItemController */
+"Retry the download" = "重新下载";
+
+/* ModelResidency */
+"Right after dictating" = "听写结束后立即释放";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⇧" = "右侧 ⇧";
+
+/* TriggerKey (dictation key picker) */
+"Right ⇧ Shift" = "右侧 ⇧ Shift";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌘" = "右侧 ⌘";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌘ Command" = "右侧 ⌘ Command";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌥" = "右侧 ⌥";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌥ Option" = "右侧 ⌥ Option";
+
+/* SelectionEdit */
+"Selection changed — result in History" = "所选内容已更改——结果已存入历史记录";
+
+/* MainWindow */
+"Settings" = "设置";
+
+/* AppEnvironment */
+"Some models couldn't be deleted" = "部分模型无法删除";
+
+/* MainWindow, StatusItemController */
+"Sounds" = "声音";
+
+/* ModelSetupWindow */
+"Start" = "开始";
+
+/* AppEnvironment */
+"Switching model…" = "正在切换模型…";
+
+/* AppLanguage */
+"System" = "跟随系统";
+
+/* AppEnvironment */
+"Text copied — paste with ⌘V" = "文本已拷贝——按 ⌘V 粘贴";
+
+/* MainWindow, StatusItemController */
+"Text model" = "文本模型";
+
+/* MainWindow */
+"Text selected on a page or in read-only text opens the answer in a panel, which stays open when you click outside: click in a text box and tap “Paste”, or “Copy”. A forgotten selection opens it too: click elsewhere before dictating." = "如果选中的是网页或只读文本，回答会显示在一个面板中，点按面板外部时它不会关闭：点按文本框后点按“粘贴”，或点按“拷贝”。忘记取消的选择也会打开这个面板：听写前请先点按其他位置。";
+
+/* AudioFileLoader */
+"The audio file is empty." = "音频文件为空。";
+
+/* ModelDownloader */
+"the download of %@ is incomplete" = "%@ 的下载不完整";
+
+/* AppEnvironment */
+"The files are deleted for good (they don't go to the Trash). In use and kept: %@. To use a deleted model again, it is downloaded again." = "文件将被永久删除（不会移到废纸篓）。正在使用并保留：%@。再次使用已删除的模型时需要重新下载。";
+
+/* MainWindow */
+"The models stay in memory only while you dictate: they load when you press %@ (about 3 s, while you speak) and leave right after." = "模型只在听写时驻留内存：按下 %@ 时载入（约 3 秒，与说话同时进行），听写结束后立即释放。";
+
+/* AppEnvironment */
+"The new language is used the next time %@ opens." = "新语言将在下次打开 %@ 时生效。";
+
+/* AnswerPanel */
+"Thinking…" = "正在思考…";
+
+/* ModelSetupWindow */
+"This Mac has %@ of memory: freeing the models after 5 min without dictating gives memory back to other apps. Reloading takes about 3 s." = "这台 Mac 有 %@ 内存：5 分钟未听写就释放模型，可把内存还给其他 App。重新载入大约需要 3 秒。";
+
+/* UnusedModels */
+"Tokenizer %@" = "分词器 %@";
+
+/* ModelSetupWindow */
+"Total to download: ~%@" = "总下载量：约 %@";
+
+/* ModelSetupWindow */
+"Transcription" = "转写";
+
+/* DictationPipeline */
+"Transcription failed." = "转写失败。";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Try again" = "重试";
+
+/* AppEnvironment */
+"Turning off the AI…" = "正在关闭 AI…";
+
+/* UndoPill */
+"Undo" = "撤销";
+
+/* UndoPill */
+"Undo edit" = "撤销编辑";
+
+/* UndoPill */
+"Undo the edit (⌘Z)" = "撤销编辑（⌘Z）";
+
+/* AudioFileLoader, AudioRecorder */
+"Unsupported audio format." = "不支持的音频格式。";
+
+/* MainWindow */
+"Unused models" = "未使用的模型";
+
+/* ModelMemoryState */
+"Voice model inactive — it loads when you dictate (~3 s)" = "语音模型未载入——听写时自动载入（约 3 秒）";
+
+/* ModelMemoryState */
+"Voice model loaded in memory" = "语音模型已载入内存";
+
+/* AppEnvironment */
+"Wait for the dictation to finish and try again" = "请等待听写结束后重试";
+
+/* AppEnvironment */
+"Wait for the dictation to finish to paste." = "请等待听写结束后再粘贴。";
+
+/* AppDelegate */
+"Window" = "窗口";
+
+/* MainWindow */
+"With text selected in an editable field, say what to do (“make it more formal”): the result replaces the selection. Don't like it? “Undo” on the pill (or ⌘Z)." = "在可编辑的文本框中选中文本后，说出要做的修改（如“改得更正式一点”）：结果会替换所选内容。不满意？点按提示条上的“撤销”（或按 ⌘Z）。";
+
+/* ModelCatalog */
+"~0.3–0.6 GB of memory (approximate)" = "约 0.3–0.6 GB 内存（估计值）";
+
+/* ModelCatalog */
+"~2.4 GB of memory (approximate)" = "约 2.4 GB 内存（估计值）";
+
+/* MainWindow */
+"· answer (not pasted)" = "· 回答（未粘贴）";
+
+/* MainWindow */
+"· edit not pasted (selection changed)" = "· 编辑未粘贴（所选内容已更改）";
+
+/* MainWindow */
+"· not pasted" = "· 未粘贴";
+
+/* MainWindow */
+"· question (no answer)" = "· 问题（未回答）";
+
+/* MainWindow */
+"· selection edited" = "· 已编辑所选内容";
+
+/* StatusItemController */
+"⚠︎ Allow Accessibility…" = "⚠︎ 允许辅助功能…";
+
+/* StatusItemController */
+"⚠︎ Allow Microphone access…" = "⚠︎ 允许访问麦克风…";
+
+/* Size units (ByteText) */
+"MB" = "MB";
+"GB" = "GB";
+
+/* Question mode (Task 5) */
+"%@ is answering your question" = "%@ 正在回答你的问题";
+"Answer from the local model — may contain mistakes" = "回答来自本地模型——可能有误";
+"Hold %@ and ask a question: the local model's answer appears in a panel, with “Paste” and “Copy”. Selected text goes along as context." = "按住 %@ 提问：本地模型的回答会显示在面板中，并带有“粘贴”和“拷贝”按钮。所选文本会一并作为上下文。";
+"Hold it and ask: the answer comes from the local model and is never pasted on its own." = "按住它即可提问：回答来自本地模型，绝不会自动粘贴。";
+"Off" = "关闭";
+"Question key" = "提问按键";
+"Question key turned off: it is now the dictation key." = "提问按键已关闭：它现在是听写按键。";
+"Questions need a text model: with “No AI” there is no model to answer. Choose a text model to use them." = "提问需要文本模型：选择“不使用 AI”时没有模型可以回答。要使用提问，请选择一个文本模型。";
+"Wait for the answer to finish (Esc stops it)" = "请等待回答结束（按 Esc 可停止）";
+"continuous · question" = "连续 · 提问";
+"question" = "提问";
+
+/* File transcription (Task 6) */
+"Transcribe file…" = "转写文件…";
+"Transcribe a file" = "转写文件";
+"Audio or video" = "音频或视频";
+"m4a, mp3, wav, mp4, mov… Or drop files on this window, or use “Open With” in the Finder." = "m4a、mp3、wav、mp4、mov… 也可以把文件拖到此窗口，或在“访达”中使用“打开方式”。";
+"Choose audio or video files to transcribe" = "选择要转写的音频或视频文件";
+"Transcribe" = "转写";
+"Waiting…" = "正在等待…";
+"Waiting for the models…" = "正在等待模型…";
+"Waiting for the other file…" = "正在等待另一个文件…";
+"Waiting for the dictation to finish…" = "正在等待听写结束…";
+"Transcribing… %lld%%" = "正在转写… %lld%%";
+"Organizing… %lld%%" = "正在整理… %lld%%";
+"Summarizing… %lld%%" = "正在总结… %lld%%";
+"Cancelled." = "已取消。";
+"Transcribe again" = "重新转写";
+"No speech found in the file." = "文件中未检测到语音。";
+"Transcript" = "转写文本";
+"Organized" = "整理后";
+"Summary" = "摘要";
+"Save .txt…" = "存储为 .txt…";
+"Summarize" = "总结";
+"Organizing and summarizing need a text model: with “No AI” there is no model to do them. Choose a text model to use them." = "整理和总结需要文本模型：选择“不使用 AI”时没有模型可以完成。要使用这些功能，请选择一个文本模型。";
+"Couldn't organize the text." = "无法整理文本。";
+"Couldn't summarize the text." = "无法总结文本。";
+"%@ (organized).txt" = "%@（整理后）.txt";
+"%@ (summary).txt" = "%@（摘要）.txt";
+"Drop audio or video files here to transcribe them too." = "将音频或视频文件拖到这里，也可以转写它们。";
+"· file: %@" = "· 文件：%@";
+"Wait for the file transcription to finish" = "请等待文件转写完成";
+"This video has no audio track." = "此视频没有音轨。";
+"This Mac can't decode this Ogg/Opus audio (the format of WhatsApp voice messages). Convert it to .m4a or .mp3 and try again." = "这台 Mac 无法解码此 Ogg/Opus 音频（WhatsApp 语音消息的格式）。请将其转换为 .m4a 或 .mp3 后重试。";
+"This file can't be opened as audio or video." = "此文件无法作为音频或视频打开。";
+"Language" = "语言";
+"Transcribe again in %@? Organize and Summarize already use it." = "要用 %@ 重新转写吗？整理和总结已经在使用这种语言。";
+"Parts kept as transcribed (the model couldn't organize them): %lld of %lld." = "保留为原始转写的部分（模型无法整理）：%lld/%lld。";
+"A file is being transcribed. Quit anyway?" = "正在转写文件。仍要退出吗？";
+"The work in progress is lost; files already transcribed are in the History." = "正在进行的工作将会丢失；已转写的文件在历史记录中。";
+
+/* Updater, MainWindow, StatusItemController (automatic updates) */
+"Updates" = "更新";
+"Check for updates automatically" = "自动检查更新";
+"Check now" = "立即检查";
+"Check for updates now…" = "立即检查更新…";
+"Updates are off in this build." = "此构建版本已关闭更新。";
+"Version %@ (%@)" = "版本 %@（%@）";
+"Update available: %@ %@…" = "有可用更新：%@ %@…";
+
+/* Credits (license and third-party notices) */
+"%@ is free software, released under %@." = "%@ 是自由软件，以 %@ 许可证发布。";
+"%@ uses these models and libraries under their own licenses. Their authors are not affiliated with %@ and do not endorse it." = "%1$@ 依照各自的许可证使用这些模型和库。它们的作者与 %2$@ 无关，也不为其背书。";
+"About" = "关于";
+"Credits" = "致谢";
+"Credits…" = "致谢…";
+"Libraries" = "库";
+"License" = "许可证";
+"Models" = "模型";
+"Only resolved while building; not part of the app." = "仅在构建时解析，不包含在应用中。";
+"Source code" = "源代码";
+"The models are not part of the app: they are downloaded from Hugging Face the first time they are needed." = "模型不包含在应用中：首次需要时从 Hugging Face 下载。";
+"Third-party models and libraries" = "第三方模型和库";
+
+/* Final review: license texts, history */
+"License text…" = "许可证全文…";
+"Third-party license texts" = "第三方许可证";
+"Third-party license texts…" = "第三方许可证…";
+"· answer failed" = "· 回答失败";

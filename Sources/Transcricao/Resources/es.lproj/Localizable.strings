@@ -1,0 +1,634 @@
+/* Español. Keys are the English source text from the code (en.lproj); the comment names the file(s) using it.
+   The app name is never written here: it comes in as a %@ argument (AppIdentity.name).
+   Neutral Spanish for Spain and Latin America, "tú" form, Apple macOS wording (Ajustes, Eliminar, Salir de…). */
+
+/* AppEnvironment */
+"%@ (%@)" = "%@ (%@)";
+
+/* AppLanguage (dictation picker: a language still in beta) */
+"%@ (beta)" = "%@ (beta)";
+
+/* AppEnvironment */
+"%@ (with “No AI”, the text model also counts as unused)" = "%@ (con “Sin IA”, el modelo de texto también cuenta como no usado)";
+
+/* AppEnvironment */
+"%@ and %@" = "%@ y %@";
+
+/* AnswerPanel */
+"%@ is answering about the selected text" = "%@ está respondiendo sobre el texto seleccionado";
+
+/* AppEnvironment */
+"%@ needs ~%@ (plus a margin of %@); free on disk: %@. Free up space and try again." = "%@ necesita ~%@ (más un margen de %@); libre en el disco: %@. Libera espacio y vuelve a intentarlo.";
+
+/* ModelCatalog */
+"%@ of %@" = "%@ de %@";
+
+/* AppEnvironment */
+"%@ was busy (dictation, download or model switch). Try again in a moment." = "%@ estaba ocupado (dictado, descarga o cambio de modelo). Vuelve a intentarlo en un momento.";
+
+/* AnswerPanel */
+"%@ — answer" = "%@ — respuesta";
+
+/* ModelResidency */
+"%lld min" = "%lld min";
+
+/* MainWindow */
+"%lld on disk, freeing %@. The models in use are never deleted." = "%lld en el disco; al eliminarlos se liberan %@. Los modelos en uso nunca se eliminan.";
+
+/* AppDelegate */
+"About %@" = "Acerca de %@";
+
+/* AnswerPanel */
+"About the selected text" = "Sobre el texto seleccionado";
+
+/* MainWindow */
+"Accessibility" = "Accesibilidad";
+
+/* MainWindow */
+"Allowed" = "Permitido";
+
+/* MainWindow */
+"Allow…" = "Permitir…";
+
+/* ModelSetupWindow */
+"already downloaded" = "ya descargado";
+
+/* AnswerPanel */
+"Answer" = "Respuesta";
+
+/* AnswerPanel */
+"Answer ready" = "Respuesta lista";
+
+/* AnswerPanel */
+"Answering…" = "Respondiendo…";
+
+/* MainWindow, StatusItemController */
+"App language" = "Idioma de la app";
+
+/* AppLanguage */
+"Automatic" = "Automático";
+
+/* AppEnvironment, MainWindow, ModelSetupWindow */
+"Cancel" = "Cancelar";
+
+/* StatusItemController */
+"Cancel download" = "Cancelar descarga";
+
+/* StatusItemController */
+"Choose models…" = "Elegir modelos…";
+
+/* AppEnvironment */
+"Choose the models first" = "Primero elige los modelos";
+
+/* AppEnvironment */
+"Choose the models to get started" = "Elige los modelos para empezar";
+
+/* ModelSetupWindow */
+"Choose your models" = "Elige tus modelos";
+
+/* AppEnvironment */
+"Click in a text box and tap Paste" = "Haz clic en un campo de texto y luego en Pegar";
+
+/* AnswerPanel, AppDelegate */
+"Close" = "Cerrar";
+
+/* AnswerPanel */
+"Close (Esc)" = "Cerrar (Esc)";
+
+/* MainWindow */
+"Commands like “write a message…” generate the text for you." = "Órdenes como “escribe un mensaje…” generan el texto por ti.";
+
+/* RecordingHUD */
+"continuous" = "continuo";
+
+/* RecordingHUD */
+"continuous · editing selection" = "continuo · editando la selección";
+
+/* AnswerPanel */
+"Copied" = "Copiado";
+
+/* AnswerPanel */
+"Copy" = "Copiar";
+
+/* MainWindow */
+"Copy raw" = "Copiar original";
+
+/* MainWindow */
+"Copy text" = "Copiar texto";
+
+/* AnswerPanel */
+"Copy the answer and close" = "Copiar la respuesta y cerrar";
+
+/* AudioFileLoader */
+"Couldn't allocate the audio buffer." = "No se pudo reservar el búfer de audio.";
+
+/* SelectionEdit */
+"Couldn't answer right now. Try again." = "No se pudo responder ahora. Vuelve a intentarlo.";
+
+/* AudioFileLoader */
+"Couldn't convert the audio: %@" = "No se pudo convertir el audio: %@";
+
+/* AppEnvironment */
+"couldn't download the models" = "no se pudieron descargar los modelos";
+
+/* SelectionEdit */
+"Couldn't edit the text" = "No se pudo editar el texto";
+
+/* DictationPipeline */
+"Couldn't load the models." = "No se pudieron cargar los modelos.";
+
+/* DictationStatus */
+"couldn't prepare the models" = "no se pudieron preparar los modelos";
+
+/* SelectionEdit */
+"Couldn't read the selection — speech saved in History" = "No se pudo leer la selección — lo dictado está en el Historial";
+
+/* AppEnvironment */
+"Delete" = "Eliminar";
+
+/* AppEnvironment */
+"Delete %lld unused models (%@)?" = "¿Eliminar %lld modelos no usados (%@)?";
+
+/* AppEnvironment */
+"Delete 1 unused model (%@)?" = "¿Eliminar 1 modelo no usado (%@)?";
+
+/* StatusItemController */
+"Delete unused models (%@)…" = "Eliminar modelos no usados (%@)…";
+
+/* MainWindow */
+"Delete…" = "Eliminar…";
+
+/* MainWindow */
+"Deleting…" = "Eliminando…";
+
+/* MainWindow, StatusItemController */
+"Dictation key" = "Tecla de dictado";
+
+/* MainWindow, StatusItemController */
+"Dictation language" = "Idioma del dictado";
+
+/* MainWindow */
+"Double-tap for continuous mode; tap again to finish." = "Pulsa dos veces para el modo continuo; vuelve a pulsar para terminar.";
+
+/* ModelSetupWindow */
+"Download and start" = "Descargar y empezar";
+
+/* AppEnvironment */
+"download cancelled" = "descarga cancelada";
+
+/* ModelDownloads */
+"Download failed (%@)." = "La descarga falló (%@).";
+
+/* ModelDownloads */
+"Downloading %@ (%lld of %lld)… %@" = "Descargando %@ (%lld de %lld)… %@";
+
+/* ModelDownloads */
+"Downloading %@… %@" = "Descargando %@… %@";
+
+/* AppEnvironment */
+"Downloading models…" = "Descargando modelos…";
+
+/* AppEnvironment */
+"Downloading the text model… %lld%%" = "Descargando el modelo de texto… %lld %%";
+
+/* UndoPill */
+"Edit applied. Undo with ⌘Z." = "Edición aplicada. Deshaz con ⌘Z.";
+
+/* RecordingHUD */
+"editing selection" = "editando la selección";
+
+/* RecordingHUD */
+"Editing selection…" = "Editando la selección…";
+
+/* StatusItemController */
+"Empty" = "Vacío";
+
+/* AppState */
+"Error: %@" = "Error: %@";
+
+/* MainWindow */
+"Esc cancels the recording; afterwards, it stops an edit or answer and closes the panel." = "Esc cancela la grabación; después, detiene una edición o respuesta y cierra el panel.";
+
+/* ModelSetupWindow */
+"Everything runs on your Mac. The models are downloaded once and then work without internet." = "Todo funciona en tu Mac. Los modelos se descargan una sola vez y luego funcionan sin internet.";
+
+/* AppEnvironment */
+"Finish the dictation to paste." = "Termina el dictado para pegar.";
+
+/* TriggerKey (dictation key picker) */
+"Fn / 🌐 Globe" = "Fn / 🌐 Globo terráqueo";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"Fn/🌐" = "Fn/🌐";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Free memory after inactivity" = "Liberar memoria tras inactividad";
+
+/* ModelSetupWindow */
+"Free on disk: %@" = "Libre en el disco: %@";
+
+/* AnswerPanel */
+"Generating answer" = "Generando respuesta";
+
+/* AppDelegate */
+"Hide %@" = "Ocultar %@";
+
+/* MainWindow */
+"History" = "Historial";
+
+/* StatusItemController */
+"History (click copies, ⌥ = raw)" = "Historial (clic copia, ⌥ = original)";
+
+/* MainWindow */
+"Hold %@ to speak and release to insert the text." = "Mantén pulsada la tecla %@ para hablar y suéltala para insertar el texto.";
+
+/* MainWindow */
+"How to use" = "Cómo se usa";
+
+/* MainWindow, StatusItemController (with the Fn key; macOS's own labels, from System Settings › Keyboard) */
+"If macOS uses 🌐 for dictation or emoji, set “Press 🌐 key to” to “Do Nothing” in System Settings › Keyboard. In Keyboard › Dictation, also change the Shortcut if it is “Press 🌐 Twice”: it clashes with double-tapping Fn. On keyboards with an fn key, the settings say “fn” instead of 🌐." = "Si macOS usa la tecla 🌐 para el dictado o los emojis, en Ajustes del Sistema › Teclado elige “No hacer nada” en “Acción al pulsar la tecla 🌐”. En Teclado › Dictado, cambia también el Atajo si es “Pulsar 🌐 dos veces”: choca con la doble pulsación de Fn. En los teclados con tecla fn, los ajustes muestran “fn” en lugar de 🌐.";
+
+/* AnswerPanel */
+"Incomplete answer — %@" = "Respuesta incompleta — %@";
+
+/* AppEnvironment */
+"Later" = "Más tarde";
+
+/* ModelMemoryState */
+"Loading models…" = "Cargando modelos…";
+
+/* ModelMemoryState */
+"Loading the voice model…" = "Cargando el modelo de voz…";
+
+/* ModelSetupWindow */
+"Memory" = "Memoria";
+
+/* MainWindow */
+"Microphone" = "Micrófono";
+
+/* AppEnvironment */
+"Microphone unavailable" = "Micrófono no disponible";
+
+/* AppDelegate */
+"Minimize" = "Minimizar";
+
+/* ModelDownloads */
+"models" = "modelos";
+
+/* ModelMemoryState */
+"Models inactive — they load when you dictate (~3 s)" = "Modelos inactivos — se cargan al dictar (~3 s)";
+
+/* ModelMemoryState */
+"Models loaded in memory" = "Modelos cargados en memoria";
+
+/* ModelResidency */
+"Never" = "Nunca";
+
+/* ModelCatalog */
+"No AI" = "Sin IA";
+
+/* ModelCatalog */
+"No AI (transcription only)" = "Sin IA (solo transcripción)";
+
+/* MainWindow */
+"No AI: the text is pasted as spoken (not organized, no editing of the selection) and the text model is not even loaded. Choose a model above to use the AI." = "Sin IA: el texto se pega tal como se dijo (sin organizar y sin editar la selección) y el modelo de texto ni siquiera se carga. Elige un modelo arriba para usar la IA.";
+
+/* MainWindow */
+"No dictations yet." = "Todavía no hay dictados.";
+
+/* ModelDownloads */
+"No internet connection. Check the network and try again." = "No hay conexión a internet. Comprueba la red y vuelve a intentarlo.";
+
+/* MainWindow */
+"None — only the models in use are on disk." = "Ninguno — en el disco solo están los modelos en uso.";
+
+/* AppEnvironment */
+"Not enough free space" = "No hay suficiente espacio libre";
+
+/* ModelSetupWindow */
+"Not enough free space. Free up disk space and try again." = "No hay suficiente espacio libre. Libera espacio en el disco y vuelve a intentarlo.";
+
+/* AppEnvironment */
+"Not pasted — answer in History" = "No se pegó — respuesta en el Historial";
+
+/* AppEnvironment */
+"Not undone — couldn't check the text" = "No se deshizo — no se pudo comprobar el texto";
+
+/* AppEnvironment */
+"Not undone — the text changed after the edit" = "No se deshizo — el texto cambió después de la edición";
+
+/* ModelSetupWindow */
+"Nothing to download" = "Nada que descargar";
+
+/* AppEnvironment */
+"Nothing was deleted" = "No se eliminó nada";
+
+/* StatusItemController */
+"Open %@…" = "Abrir %@…";
+
+/* MainWindow, StatusItemController */
+"Open at login" = "Abrir al iniciar sesión";
+
+/* AppEnvironment */
+"Optimizing the voice model for this Mac (first time only, ~3 min)…" = "Optimizando el modelo de voz para este Mac (solo la primera vez, ~3 min)…";
+
+/* ModelSetupWindow */
+"Organize the text" = "Organizar el texto";
+
+/* MainWindow, StatusItemController */
+"Organize with AI" = "Organizar con IA";
+
+/* AnswerPanel */
+"Paste" = "Pegar";
+
+/* AnswerPanel */
+"Paste the answer where the text cursor is" = "Pegar la respuesta donde está el cursor de texto";
+
+/* ModelSetupWindow */
+"Pastes the text as spoken. No memory beyond the voice model; you can change it later in Settings." = "Pega el texto tal como se dijo. No usa más memoria que el modelo de voz; puedes cambiarlo después en Ajustes.";
+
+/* MainWindow */
+"Permissions" = "Permisos";
+
+/* AppEnvironment, AppState */
+"Preparing models…" = "Preparando modelos…";
+
+/* AppState, RecordingHUD */
+"Processing…" = "Procesando…";
+
+/* ModelSetupWindow */
+"Punctuates, organizes lists, fixes what you rephrased and edits the selected text by voice. %@." = "Puntúa, organiza listas, corrige lo que reformulaste y edita por voz el texto seleccionado. %@.";
+
+/* StatusItemController */
+"Quit" = "Salir";
+
+/* AppDelegate */
+"Quit %@" = "Salir de %@";
+
+/* ModelCatalog */
+"Qwen3 4B (recommended)" = "Qwen3 4B (recomendado)";
+
+/* StatusItemController */
+"Raw: %@" = "Original: %@";
+
+/* AppState */
+"Ready — hold %@ to dictate" = "Listo — mantén pulsada la tecla %@ para dictar";
+
+/* ModelSetupWindow */
+"Recognizes your speech. Required. %@." = "Reconoce lo que dices. Obligatorio. %@.";
+
+/* AppState */
+"Recording (continuous) — tap %@ to finish" = "Grabando (continuo) — pulsa la tecla %@ para terminar";
+
+/* AppState */
+"Recording…" = "Grabando…";
+
+/* AppState */
+"Reloading models… (you can dictate)" = "Recargando modelos… (puedes dictar)";
+
+/* MainWindow, ModelSetupWindow */
+"Reloading the models after they are freed takes about 3 s." = "Volver a cargar los modelos después de liberarlos tarda unos 3 s.";
+
+/* AppEnvironment */
+"Reopen %@ to change the language?" = "¿Reabrir %@ para cambiar el idioma?";
+
+/* AppEnvironment */
+"Reopen now" = "Reabrir ahora";
+
+/* StatusItemController */
+"Retry the download" = "Reintentar la descarga";
+
+/* ModelResidency */
+"Right after dictating" = "Justo después de dictar";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⇧" = "⇧ derecha";
+
+/* TriggerKey (dictation key picker) */
+"Right ⇧ Shift" = "⇧ Mayúsculas derecha";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌘" = "⌘ derecha";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌘ Command" = "⌘ Comando derecha";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌥" = "⌥ derecha";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌥ Option" = "⌥ Opción derecha";
+
+/* SelectionEdit */
+"Selection changed — result in History" = "La selección cambió — resultado en el Historial";
+
+/* MainWindow */
+"Settings" = "Ajustes";
+
+/* AppEnvironment */
+"Some models couldn't be deleted" = "Algunos modelos no se pudieron eliminar";
+
+/* MainWindow, StatusItemController */
+"Sounds" = "Sonidos";
+
+/* ModelSetupWindow */
+"Start" = "Empezar";
+
+/* AppEnvironment */
+"Switching model…" = "Cambiando de modelo…";
+
+/* AppLanguage */
+"System" = "Sistema";
+
+/* AppEnvironment */
+"Text copied — paste with ⌘V" = "Texto copiado — pégalo con ⌘V";
+
+/* MainWindow, StatusItemController */
+"Text model" = "Modelo de texto";
+
+/* MainWindow */
+"Text selected on a page or in read-only text opens the answer in a panel, which stays open when you click outside: click in a text box and tap “Paste”, or “Copy”. A forgotten selection opens it too: click elsewhere before dictating." = "Con texto seleccionado en una página o en un texto de solo lectura, la respuesta se abre en un panel que sigue abierto si haces clic fuera: haz clic en un campo de texto y luego en “Pegar”, o en “Copiar”. Una selección olvidada también lo abre: haz clic en otro sitio antes de dictar.";
+
+/* AudioFileLoader */
+"The audio file is empty." = "El archivo de audio está vacío.";
+
+/* ModelDownloader */
+"the download of %@ is incomplete" = "la descarga de %@ está incompleta";
+
+/* AppEnvironment */
+"The files are deleted for good (they don't go to the Trash). In use and kept: %@. To use a deleted model again, it is downloaded again." = "Los archivos se eliminan definitivamente (no van a la Papelera). En uso y conservados: %@. Para volver a usar un modelo eliminado, se descarga otra vez.";
+
+/* MainWindow */
+"The models stay in memory only while you dictate: they load when you press %@ (about 3 s, while you speak) and leave right after." = "Los modelos solo están en memoria mientras dictas: se cargan al pulsar la tecla %@ (unos 3 s, mientras hablas) y se liberan justo después.";
+
+/* AppEnvironment */
+"The new language is used the next time %@ opens." = "El nuevo idioma se usará la próxima vez que se abra %@.";
+
+/* AnswerPanel */
+"Thinking…" = "Pensando…";
+
+/* ModelSetupWindow */
+"This Mac has %@ of memory: freeing the models after 5 min without dictating gives memory back to other apps. Reloading takes about 3 s." = "Este Mac tiene %@ de memoria: liberar los modelos tras 5 min sin dictar devuelve memoria a las demás apps. Volver a cargarlos tarda unos 3 s.";
+
+/* UnusedModels */
+"Tokenizer %@" = "Tokenizador %@";
+
+/* ModelSetupWindow */
+"Total to download: ~%@" = "Total a descargar: ~%@";
+
+/* ModelSetupWindow */
+"Transcription" = "Transcripción";
+
+/* DictationPipeline */
+"Transcription failed." = "La transcripción falló.";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Try again" = "Reintentar";
+
+/* AppEnvironment */
+"Turning off the AI…" = "Desactivando la IA…";
+
+/* UndoPill */
+"Undo" = "Deshacer";
+
+/* UndoPill */
+"Undo edit" = "Deshacer edición";
+
+/* UndoPill */
+"Undo the edit (⌘Z)" = "Deshacer la edición (⌘Z)";
+
+/* AudioFileLoader, AudioRecorder */
+"Unsupported audio format." = "Formato de audio no compatible.";
+
+/* MainWindow */
+"Unused models" = "Modelos no usados";
+
+/* ModelMemoryState */
+"Voice model inactive — it loads when you dictate (~3 s)" = "Modelo de voz inactivo — se carga al dictar (~3 s)";
+
+/* ModelMemoryState */
+"Voice model loaded in memory" = "Modelo de voz cargado en memoria";
+
+/* AppEnvironment */
+"Wait for the dictation to finish and try again" = "Espera a que termine el dictado y vuelve a intentarlo";
+
+/* AppEnvironment */
+"Wait for the dictation to finish to paste." = "Espera a que termine el dictado para pegar.";
+
+/* AppDelegate */
+"Window" = "Ventana";
+
+/* MainWindow */
+"With text selected in an editable field, say what to do (“make it more formal”): the result replaces the selection. Don't like it? “Undo” on the pill (or ⌘Z)." = "Con texto seleccionado en un campo editable, di qué hacer (“ponlo más formal”): el resultado sustituye la selección. ¿No te convence? “Deshacer” en la pastilla (o ⌘Z).";
+
+/* ModelCatalog */
+"~0.3–0.6 GB of memory (approximate)" = "~0,3–0,6 GB de memoria (aprox.)";
+
+/* ModelCatalog */
+"~2.4 GB of memory (approximate)" = "~2,4 GB de memoria (aprox.)";
+
+/* MainWindow */
+"· answer (not pasted)" = "· respuesta (no pegada)";
+
+/* MainWindow */
+"· edit not pasted (selection changed)" = "· edición no pegada (la selección cambió)";
+
+/* MainWindow */
+"· not pasted" = "· no pegado";
+
+/* MainWindow */
+"· question (no answer)" = "· pregunta (sin respuesta)";
+
+/* MainWindow */
+"· selection edited" = "· selección editada";
+
+/* StatusItemController */
+"⚠︎ Allow Accessibility…" = "⚠︎ Permitir Accesibilidad…";
+
+/* StatusItemController */
+"⚠︎ Allow Microphone access…" = "⚠︎ Permitir acceso al micrófono…";
+
+/* Size units (ByteText) */
+"MB" = "MB";
+"GB" = "GB";
+
+/* Question mode (Task 5) */
+"%@ is answering your question" = "%@ está respondiendo a tu pregunta";
+"Answer from the local model — may contain mistakes" = "Respuesta del modelo local — puede contener errores";
+"Hold %@ and ask a question: the local model's answer appears in a panel, with “Paste” and “Copy”. Selected text goes along as context." = "Mantén pulsada la tecla %@ y haz una pregunta: la respuesta del modelo local aparece en un panel, con “Pegar” y “Copiar”. El texto seleccionado se usa como contexto.";
+"Hold it and ask: the answer comes from the local model and is never pasted on its own." = "Mantenla pulsada y pregunta: la respuesta viene del modelo local y nunca se pega sola.";
+"Off" = "Desactivado";
+"Question key" = "Tecla de pregunta";
+"Question key turned off: it is now the dictation key." = "Tecla de pregunta desactivada: ahora es la tecla de dictado.";
+"Questions need a text model: with “No AI” there is no model to answer. Choose a text model to use them." = "Las preguntas necesitan un modelo de texto: con “Sin IA” no hay ningún modelo que responda. Elige un modelo de texto para usarlas.";
+"Wait for the answer to finish (Esc stops it)" = "Espera a que termine la respuesta (Esc la detiene)";
+"continuous · question" = "continuo · pregunta";
+"question" = "pregunta";
+
+/* File transcription (Task 6) */
+"Transcribe file…" = "Transcribir archivo…";
+"Transcribe a file" = "Transcribir un archivo";
+"Audio or video" = "Audio o vídeo";
+"m4a, mp3, wav, mp4, mov… Or drop files on this window, or use “Open With” in the Finder." = "m4a, mp3, wav, mp4, mov… O arrastra archivos a esta ventana, o usa “Abrir con” en el Finder.";
+"Choose audio or video files to transcribe" = "Elige archivos de audio o vídeo para transcribir";
+"Transcribe" = "Transcribir";
+"Waiting…" = "Esperando…";
+"Waiting for the models…" = "Esperando a los modelos…";
+"Waiting for the other file…" = "Esperando al otro archivo…";
+"Waiting for the dictation to finish…" = "Esperando a que termine el dictado…";
+"Transcribing… %lld%%" = "Transcribiendo… %lld %%";
+"Organizing… %lld%%" = "Organizando… %lld %%";
+"Summarizing… %lld%%" = "Resumiendo… %lld %%";
+"Cancelled." = "Cancelado.";
+"Transcribe again" = "Volver a transcribir";
+"No speech found in the file." = "No se encontró voz en el archivo.";
+"Transcript" = "Transcripción";
+"Organized" = "Organizado";
+"Summary" = "Resumen";
+"Save .txt…" = "Guardar .txt…";
+"Summarize" = "Resumir";
+"Organizing and summarizing need a text model: with “No AI” there is no model to do them. Choose a text model to use them." = "Organizar y resumir necesitan un modelo de texto: con “Sin IA” no hay ningún modelo que lo haga. Elige un modelo de texto para usarlos.";
+"Couldn't organize the text." = "No se pudo organizar el texto.";
+"Couldn't summarize the text." = "No se pudo resumir el texto.";
+"%@ (organized).txt" = "%@ (organizado).txt";
+"%@ (summary).txt" = "%@ (resumen).txt";
+"Drop audio or video files here to transcribe them too." = "Arrastra aquí archivos de audio o vídeo para transcribirlos también.";
+"· file: %@" = "· archivo: %@";
+"Wait for the file transcription to finish" = "Espera a que termine la transcripción del archivo";
+"This video has no audio track." = "Este vídeo no tiene pista de audio.";
+"This Mac can't decode this Ogg/Opus audio (the format of WhatsApp voice messages). Convert it to .m4a or .mp3 and try again." = "Este Mac no puede decodificar este audio Ogg/Opus (el formato de los audios de WhatsApp). Conviértelo a .m4a o .mp3 y vuelve a intentarlo.";
+"This file can't be opened as audio or video." = "Este archivo no se puede abrir como audio o vídeo.";
+"Language" = "Idioma";
+"Transcribe again in %@? Organize and Summarize already use it." = "¿Volver a transcribir en %@? Organizar y Resumir ya usan este idioma.";
+"Parts kept as transcribed (the model couldn't organize them): %lld of %lld." = "Partes que se dejaron como se transcribieron (el modelo no pudo organizarlas): %lld de %lld.";
+"A file is being transcribed. Quit anyway?" = "Se está transcribiendo un archivo. ¿Salir de todos modos?";
+"The work in progress is lost; files already transcribed are in the History." = "Se perderá el trabajo en curso; los archivos ya transcritos están en el Historial.";
+
+/* Updater, MainWindow, StatusItemController (automatic updates) */
+"Updates" = "Actualizaciones";
+"Check for updates automatically" = "Buscar actualizaciones automáticamente";
+"Check now" = "Buscar ahora";
+"Check for updates now…" = "Buscar actualizaciones ahora…";
+"Updates are off in this build." = "Las actualizaciones están desactivadas en esta versión.";
+"Version %@ (%@)" = "Versión %@ (%@)";
+"Update available: %@ %@…" = "Actualización disponible: %@ %@…";
+
+/* Credits (license and third-party notices) */
+"%@ is free software, released under %@." = "%@ es software libre, distribuido bajo la licencia %@.";
+"%@ uses these models and libraries under their own licenses. Their authors are not affiliated with %@ and do not endorse it." = "%1$@ usa estos modelos y bibliotecas bajo sus propias licencias. Sus autores no están afiliados a %2$@ ni lo respaldan.";
+"About" = "Acerca de";
+"Credits" = "Créditos";
+"Credits…" = "Créditos…";
+"Libraries" = "Bibliotecas";
+"License" = "Licencia";
+"Models" = "Modelos";
+"Only resolved while building; not part of the app." = "Solo se resuelve al compilar; no forma parte de la app.";
+"Source code" = "Código fuente";
+"The models are not part of the app: they are downloaded from Hugging Face the first time they are needed." = "Los modelos no forman parte de la app: se descargan de Hugging Face la primera vez que se necesitan.";
+"Third-party models and libraries" = "Modelos y bibliotecas de terceros";
+
+/* Final review: license texts, history */
+"License text…" = "Texto de la licencia…";
+"Third-party license texts" = "Licencias de terceros";
+"Third-party license texts…" = "Licencias de terceros…";
+"· answer failed" = "· la respuesta falló";

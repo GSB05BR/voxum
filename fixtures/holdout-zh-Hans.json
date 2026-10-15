@@ -1,0 +1,4 @@
+[
+  {"id": "h-zh-correcao-dia", "lang": "zh", "entrada": "呃那个明天的培训改到周三不对是周四下午", "modo": "ditado", "esperado": "明天的培训改到周四下午。", "deveConter": ["周四下午"], "naoDeveConter": ["周三", "不对", "呃", "那个", "週"], "maxCaracteres": 30},
+  {"id": "h-zh-pergunta-com-selecao", "lang": "zh", "selecionado": "李伟的航班明天上午十点到达上海浦东机场，请安排车辆接机。", "entrada": "李伟的航班明天几点到", "modo": "edicao", "esperado": "李伟的航班明天几点到？", "deveConter": ["几点到", "？"], "naoDeveConter": ["十点", "10", "浦东", "幾"], "maxCaracteres": 30}
+]

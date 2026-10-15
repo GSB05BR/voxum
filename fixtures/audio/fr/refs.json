@@ -1,0 +1,29 @@
+[
+  {
+    "id": "thomas-01",
+    "audio": "thomas-01.wav",
+    "voice": "Thomas",
+    "ref": "Le rendez-vous avec Carlos chez le notaire est fixé à mardi prochain, à quatorze heures trente.",
+    "alts": [
+      "Le rendez-vous avec Carlos chez le notaire est fixé à mardi prochain, à 14 h 30.",
+      "Le rendez-vous avec Carlos chez le notaire est fixé à mardi prochain, à 14h30."
+    ]
+  },
+  {
+    "id": "thomas-02",
+    "audio": "thomas-02.wav",
+    "voice": "Thomas",
+    "ref": "Est-ce que tu as pensé à réserver les billets de train pour Bordeaux ?"
+  },
+  {
+    "id": "thomas-03",
+    "audio": "thomas-03.wav",
+    "voice": "Thomas",
+    "ref": "Le devis des travaux s'élève à trois mille quatre cents euros, et le chantier commencera début juin.",
+    "alts": [
+      "Le devis des travaux s'élève à 3 400 euros, et le chantier commencera début juin.",
+      "Le devis des travaux s'élève à 3400 euros, et le chantier commencera début juin.",
+      "Le devis des travaux s'élève à 3 400 €, et le chantier commencera début juin."
+    ]
+  }
+]

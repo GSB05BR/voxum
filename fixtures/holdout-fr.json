@@ -1,0 +1,4 @@
+[
+  {"id": "fr-ho-correction-facture", "lang": "fr", "entrada": "euh je pense qu'on devrait envoyer la facture à madame dupont enfin non à monsieur leroy avant la fin du mois", "modo": "ditado", "esperado": "Je pense qu'on devrait envoyer la facture à M. Leroy avant la fin du mois.", "deveConter": ["facture", "leroy", "fin du mois"], "naoDeveConter": ["dupont", "euh", "enfin non"], "maxCaracteres": 110},
+  {"id": "fr-ho-question-train", "lang": "fr", "entrada": "combien de temps il faut pour aller de paris à lyon en train", "modo": "ditado", "esperado": "Combien de temps il faut pour aller de Paris à Lyon en train ?", "deveConter": ["paris", "lyon", "?"], "naoDeveConter": ["heure", "2 h", "2h", "environ"], "maxCaracteres": 80}
+]

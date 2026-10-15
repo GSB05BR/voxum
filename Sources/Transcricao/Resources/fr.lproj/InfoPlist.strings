@@ -1,0 +1,5 @@
+/* Shown under the system prompt "“<app>” would like to access the microphone", which already names the app. */
+"NSMicrophoneUsageDescription" = "Votre voix est transformée en texte localement, sur votre Mac.";
+/* Document types in Info.plist (CFBundleTypeName), shown by “Open With” in the Finder. */
+"Audio file" = "Fichier audio";
+"Video file" = "Fichier vidéo";

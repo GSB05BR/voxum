@@ -1,0 +1,4 @@
+[
+  {"id": "h-en-scratch-that", "lang": "en", "entrada": "send the invoice to carlos scratch that send it to maria by friday", "modo": "ditado", "esperado": "Send the invoice to Maria by Friday.", "deveConter": ["maria", "friday"], "naoDeveConter": ["carlos", "scratch"], "maxCaracteres": 50},
+  {"id": "h-en-question-fillers", "lang": "en", "entrada": "uh so how many people actually live in tokyo", "modo": "ditado", "esperado": "So how many people actually live in Tokyo?", "deveConter": ["people actually live in tokyo", "?"], "naoDeveConter": ["uh", "million"], "maxCaracteres": 55}
+]

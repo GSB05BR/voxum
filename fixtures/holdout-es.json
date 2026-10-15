@@ -1,0 +1,4 @@
+[
+  {"id": "es-h-pregunta-libro", "lang": "es", "entrada": "oye sabes quién escribió cien años de soledad", "modo": "ditado", "esperado": "Oye, ¿sabes quién escribió Cien años de soledad?", "deveConter": ["¿", "quién escribió", "cien años de soledad", "?"], "naoDeveConter": ["márquez", "colombian"], "maxCaracteres": 70},
+  {"id": "es-h-mejor-dicho", "lang": "es", "entrada": "el vuelo sale el martes mejor dicho el miércoles a las siete de la mañana", "modo": "ditado", "esperado": "El vuelo sale el miércoles a las 7 de la mañana.", "deveConter": ["miércoles", "vuelo sale"], "naoDeveConter": ["martes", "mejor dicho"], "maxCaracteres": 70}
+]

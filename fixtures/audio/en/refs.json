@@ -1,0 +1,26 @@
+[
+  {
+    "id": "samantha-01",
+    "audio": "samantha-01.wav",
+    "voice": "Samantha",
+    "ref": "Can you move the design review to Thursday afternoon and invite Maria and John?"
+  },
+  {
+    "id": "samantha-02",
+    "audio": "samantha-02.wav",
+    "voice": "Samantha",
+    "ref": "The new office in Chicago will open in September with room for about forty people.",
+    "alts": [
+      "The new office in Chicago will open in September with room for about 40 people."
+    ]
+  },
+  {
+    "id": "samantha-03",
+    "audio": "samantha-03.wav",
+    "voice": "Samantha",
+    "ref": "Please remember to pick up milk, eggs and coffee on your way home tonight.",
+    "alts": [
+      "Please remember to pick up milk, eggs, and coffee on your way home tonight."
+    ]
+  }
+]

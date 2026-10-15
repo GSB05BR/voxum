@@ -1,0 +1,28 @@
+[
+  {
+    "id": "monica-01",
+    "audio": "monica-01.wav",
+    "voice": "Mónica",
+    "ref": "Mañana a primera hora le mando a Lucía el presupuesto actualizado del proyecto."
+  },
+  {
+    "id": "paulina-01",
+    "audio": "paulina-01.wav",
+    "voice": "Paulina",
+    "ref": "La factura número cuatro mil trescientos veinte se pagó en Guadalajara el martes pasado.",
+    "alts": [
+      "La factura número 4320 se pagó en Guadalajara el martes pasado.",
+      "La factura número 4.320 se pagó en Guadalajara el martes pasado.",
+      "La factura número 4,320 se pagó en Guadalajara el martes pasado."
+    ]
+  },
+  {
+    "id": "monica-02",
+    "audio": "monica-02.wav",
+    "voice": "Mónica",
+    "ref": "Bueno, este, creo que la reunión es el jueves, no, perdón, el viernes a las cinco de la tarde.",
+    "alts": [
+      "Bueno, este, creo que la reunión es el jueves, no, perdón, el viernes a las 5 de la tarde."
+    ]
+  }
+]

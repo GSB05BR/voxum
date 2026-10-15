@@ -1,0 +1,16 @@
+[
+  {
+    "id": "correcao",
+    "audio": "correcao.wav",
+    "voice": "legacy",
+    "refSource": "turbo-output",
+    "ref": "Oi, tudo bem? Como você vai? Não, quis dizer, como você está?"
+  },
+  {
+    "id": "longo",
+    "audio": "longo.wav",
+    "voice": "legacy",
+    "refSource": "turbo-output",
+    "ref": "Hoje eu gostaria de falar um pouco sobre a rotina de trabalho da nossa equipe de desenvolvimento. Todas as manhãs, nós nos reunimos por 15 minutos para combinar as prioridades do dia. Depois disso, cada pessoa escolhe uma tarefa e começa a trabalhar nela com calma. Quando surge alguma dúvida, a gente conversa no canal da equipe, para que todo mundo acompanhe a decisão. À tarde, fazemos a revisão do código que foi escrito durante o dia, procurando erros e melhorias possíveis. Na sexta-feira, reservamos uma hora para testar o aplicativo inteiro, do começo ao fim, como se fôssemos usuários de verdade. Os problemas encontrados são anotados e organizados por ordem de importância. Na segunda-feira seguinte, começamos corrigindo os mais urgentes. Esse ritmo simples nos ajuda a entregar novidades toda semana, sem correria e sem deixar a qualidade de lado. Por fim, sempre terminamos o mês com uma conversa sobre o que aprendemos e o que podemos fazer melhor no próximo ciclo."
+  }
+]

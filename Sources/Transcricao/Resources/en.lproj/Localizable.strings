@@ -1,0 +1,633 @@
+/* English (base). Keys are the English source text from the code; the comment names the file(s) using it.
+   The app name is never written here: it comes in as a %@ argument (AppIdentity.name). */
+
+/* AppEnvironment */
+"%@ (%@)" = "%@ (%@)";
+
+/* AppLanguage (dictation picker: a language still in beta) */
+"%@ (beta)" = "%@ (beta)";
+
+/* AppEnvironment */
+"%@ (with “No AI”, the text model also counts as unused)" = "%@ (with “No AI”, the text model also counts as unused)";
+
+/* AppEnvironment */
+"%@ and %@" = "%@ and %@";
+
+/* AnswerPanel */
+"%@ is answering about the selected text" = "%@ is answering about the selected text";
+
+/* AppEnvironment */
+"%@ needs ~%@ (plus a margin of %@); free on disk: %@. Free up space and try again." = "%@ needs ~%@ (plus a margin of %@); free on disk: %@. Free up space and try again.";
+
+/* ModelCatalog */
+"%@ of %@" = "%@ of %@";
+
+/* AppEnvironment */
+"%@ was busy (dictation, download or model switch). Try again in a moment." = "%@ was busy (dictation, download or model switch). Try again in a moment.";
+
+/* AnswerPanel */
+"%@ — answer" = "%@ — answer";
+
+/* ModelResidency */
+"%lld min" = "%lld min";
+
+/* MainWindow */
+"%lld on disk, freeing %@. The models in use are never deleted." = "%lld on disk, freeing %@. The models in use are never deleted.";
+
+/* AppDelegate */
+"About %@" = "About %@";
+
+/* AnswerPanel */
+"About the selected text" = "About the selected text";
+
+/* MainWindow */
+"Accessibility" = "Accessibility";
+
+/* MainWindow */
+"Allowed" = "Allowed";
+
+/* MainWindow */
+"Allow…" = "Allow…";
+
+/* ModelSetupWindow */
+"already downloaded" = "already downloaded";
+
+/* AnswerPanel */
+"Answer" = "Answer";
+
+/* AnswerPanel */
+"Answer ready" = "Answer ready";
+
+/* AnswerPanel */
+"Answering…" = "Answering…";
+
+/* MainWindow, StatusItemController */
+"App language" = "App language";
+
+/* AppLanguage */
+"Automatic" = "Automatic";
+
+/* AppEnvironment, MainWindow, ModelSetupWindow */
+"Cancel" = "Cancel";
+
+/* StatusItemController */
+"Cancel download" = "Cancel download";
+
+/* StatusItemController */
+"Choose models…" = "Choose models…";
+
+/* AppEnvironment */
+"Choose the models first" = "Choose the models first";
+
+/* AppEnvironment */
+"Choose the models to get started" = "Choose the models to get started";
+
+/* ModelSetupWindow */
+"Choose your models" = "Choose your models";
+
+/* AppEnvironment */
+"Click in a text box and tap Paste" = "Click in a text box and tap Paste";
+
+/* AnswerPanel, AppDelegate */
+"Close" = "Close";
+
+/* AnswerPanel */
+"Close (Esc)" = "Close (Esc)";
+
+/* MainWindow */
+"Commands like “write a message…” generate the text for you." = "Commands like “write a message…” generate the text for you.";
+
+/* RecordingHUD */
+"continuous" = "continuous";
+
+/* RecordingHUD */
+"continuous · editing selection" = "continuous · editing selection";
+
+/* AnswerPanel */
+"Copied" = "Copied";
+
+/* AnswerPanel */
+"Copy" = "Copy";
+
+/* MainWindow */
+"Copy raw" = "Copy raw";
+
+/* MainWindow */
+"Copy text" = "Copy text";
+
+/* AnswerPanel */
+"Copy the answer and close" = "Copy the answer and close";
+
+/* AudioFileLoader */
+"Couldn't allocate the audio buffer." = "Couldn't allocate the audio buffer.";
+
+/* SelectionEdit */
+"Couldn't answer right now. Try again." = "Couldn't answer right now. Try again.";
+
+/* AudioFileLoader */
+"Couldn't convert the audio: %@" = "Couldn't convert the audio: %@";
+
+/* AppEnvironment */
+"couldn't download the models" = "couldn't download the models";
+
+/* SelectionEdit */
+"Couldn't edit the text" = "Couldn't edit the text";
+
+/* DictationPipeline */
+"Couldn't load the models." = "Couldn't load the models.";
+
+/* DictationStatus */
+"couldn't prepare the models" = "couldn't prepare the models";
+
+/* SelectionEdit */
+"Couldn't read the selection — speech saved in History" = "Couldn't read the selection — speech saved in History";
+
+/* AppEnvironment */
+"Delete" = "Delete";
+
+/* AppEnvironment */
+"Delete %lld unused models (%@)?" = "Delete %lld unused models (%@)?";
+
+/* AppEnvironment */
+"Delete 1 unused model (%@)?" = "Delete 1 unused model (%@)?";
+
+/* StatusItemController */
+"Delete unused models (%@)…" = "Delete unused models (%@)…";
+
+/* MainWindow */
+"Delete…" = "Delete…";
+
+/* MainWindow */
+"Deleting…" = "Deleting…";
+
+/* MainWindow, StatusItemController */
+"Dictation key" = "Dictation key";
+
+/* MainWindow, StatusItemController */
+"Dictation language" = "Dictation language";
+
+/* MainWindow */
+"Double-tap for continuous mode; tap again to finish." = "Double-tap for continuous mode; tap again to finish.";
+
+/* ModelSetupWindow */
+"Download and start" = "Download and start";
+
+/* AppEnvironment */
+"download cancelled" = "download cancelled";
+
+/* ModelDownloads */
+"Download failed (%@)." = "Download failed (%@).";
+
+/* ModelDownloads */
+"Downloading %@ (%lld of %lld)… %@" = "Downloading %@ (%lld of %lld)… %@";
+
+/* ModelDownloads */
+"Downloading %@… %@" = "Downloading %@… %@";
+
+/* AppEnvironment */
+"Downloading models…" = "Downloading models…";
+
+/* AppEnvironment */
+"Downloading the text model… %lld%%" = "Downloading the text model… %lld%%";
+
+/* UndoPill */
+"Edit applied. Undo with ⌘Z." = "Edit applied. Undo with ⌘Z.";
+
+/* RecordingHUD */
+"editing selection" = "editing selection";
+
+/* RecordingHUD */
+"Editing selection…" = "Editing selection…";
+
+/* StatusItemController */
+"Empty" = "Empty";
+
+/* AppState */
+"Error: %@" = "Error: %@";
+
+/* MainWindow */
+"Esc cancels the recording; afterwards, it stops an edit or answer and closes the panel." = "Esc cancels the recording; afterwards, it stops an edit or answer and closes the panel.";
+
+/* ModelSetupWindow */
+"Everything runs on your Mac. The models are downloaded once and then work without internet." = "Everything runs on your Mac. The models are downloaded once and then work without internet.";
+
+/* AppEnvironment */
+"Finish the dictation to paste." = "Finish the dictation to paste.";
+
+/* TriggerKey (dictation key picker) */
+"Fn / 🌐 Globe" = "Fn / 🌐 Globe";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"Fn/🌐" = "Fn/🌐";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Free memory after inactivity" = "Free memory after inactivity";
+
+/* ModelSetupWindow */
+"Free on disk: %@" = "Free on disk: %@";
+
+/* AnswerPanel */
+"Generating answer" = "Generating answer";
+
+/* AppDelegate */
+"Hide %@" = "Hide %@";
+
+/* MainWindow */
+"History" = "History";
+
+/* StatusItemController */
+"History (click copies, ⌥ = raw)" = "History (click copies, ⌥ = raw)";
+
+/* MainWindow */
+"Hold %@ to speak and release to insert the text." = "Hold %@ to speak and release to insert the text.";
+
+/* MainWindow */
+"How to use" = "How to use";
+
+/* MainWindow, StatusItemController (with the Fn key; macOS's own labels, from System Settings › Keyboard) */
+"If macOS uses 🌐 for dictation or emoji, set “Press 🌐 key to” to “Do Nothing” in System Settings › Keyboard. In Keyboard › Dictation, also change the Shortcut if it is “Press 🌐 Twice”: it clashes with double-tapping Fn. On keyboards with an fn key, the settings say “fn” instead of 🌐." = "If macOS uses 🌐 for dictation or emoji, set “Press 🌐 key to” to “Do Nothing” in System Settings › Keyboard. In Keyboard › Dictation, also change the Shortcut if it is “Press 🌐 Twice”: it clashes with double-tapping Fn. On keyboards with an fn key, the settings say “fn” instead of 🌐.";
+
+/* AnswerPanel */
+"Incomplete answer — %@" = "Incomplete answer — %@";
+
+/* AppEnvironment */
+"Later" = "Later";
+
+/* ModelMemoryState */
+"Loading models…" = "Loading models…";
+
+/* ModelMemoryState */
+"Loading the voice model…" = "Loading the voice model…";
+
+/* ModelSetupWindow */
+"Memory" = "Memory";
+
+/* MainWindow */
+"Microphone" = "Microphone";
+
+/* AppEnvironment */
+"Microphone unavailable" = "Microphone unavailable";
+
+/* AppDelegate */
+"Minimize" = "Minimize";
+
+/* ModelDownloads */
+"models" = "models";
+
+/* ModelMemoryState */
+"Models inactive — they load when you dictate (~3 s)" = "Models inactive — they load when you dictate (~3 s)";
+
+/* ModelMemoryState */
+"Models loaded in memory" = "Models loaded in memory";
+
+/* ModelResidency */
+"Never" = "Never";
+
+/* ModelCatalog */
+"No AI" = "No AI";
+
+/* ModelCatalog */
+"No AI (transcription only)" = "No AI (transcription only)";
+
+/* MainWindow */
+"No AI: the text is pasted as spoken (not organized, no editing of the selection) and the text model is not even loaded. Choose a model above to use the AI." = "No AI: the text is pasted exactly as spoken (no tidying, no editing of the selection) and the text model isn't loaded at all. Choose a model above to use the AI.";
+
+/* MainWindow */
+"No dictations yet." = "No dictations yet.";
+
+/* ModelDownloads */
+"No internet connection. Check the network and try again." = "No internet connection. Check the network and try again.";
+
+/* MainWindow */
+"None — only the models in use are on disk." = "None — only the models in use are on disk.";
+
+/* AppEnvironment */
+"Not enough free space" = "Not enough free space";
+
+/* ModelSetupWindow */
+"Not enough free space. Free up disk space and try again." = "Not enough free space. Free up disk space and try again.";
+
+/* AppEnvironment */
+"Not pasted — answer in History" = "Not pasted — answer in History";
+
+/* AppEnvironment */
+"Not undone — couldn't check the text" = "Not undone — couldn't check the text";
+
+/* AppEnvironment */
+"Not undone — the text changed after the edit" = "Not undone — the text changed after the edit";
+
+/* ModelSetupWindow */
+"Nothing to download" = "Nothing to download";
+
+/* AppEnvironment */
+"Nothing was deleted" = "Nothing was deleted";
+
+/* StatusItemController */
+"Open %@…" = "Open %@…";
+
+/* MainWindow, StatusItemController */
+"Open at login" = "Open at login";
+
+/* AppEnvironment */
+"Optimizing the voice model for this Mac (first time only, ~3 min)…" = "Optimizing the voice model for this Mac (first time only, ~3 min)…";
+
+/* ModelSetupWindow */
+"Organize the text" = "Organize the text";
+
+/* MainWindow, StatusItemController */
+"Organize with AI" = "Organize with AI";
+
+/* AnswerPanel */
+"Paste" = "Paste";
+
+/* AnswerPanel */
+"Paste the answer where the text cursor is" = "Paste the answer where the text cursor is";
+
+/* ModelSetupWindow */
+"Pastes the text as spoken. No memory beyond the voice model; you can change it later in Settings." = "Pastes the text as spoken and uses no memory beyond the voice model. You can change this later in Settings.";
+
+/* MainWindow */
+"Permissions" = "Permissions";
+
+/* AppEnvironment, AppState */
+"Preparing models…" = "Preparing models…";
+
+/* AppState, RecordingHUD */
+"Processing…" = "Processing…";
+
+/* ModelSetupWindow */
+"Punctuates, organizes lists, fixes what you rephrased and edits the selected text by voice. %@." = "Punctuates, organizes lists, fixes what you rephrased and edits the selected text by voice. %@.";
+
+/* StatusItemController */
+"Quit" = "Quit";
+
+/* AppDelegate */
+"Quit %@" = "Quit %@";
+
+/* ModelCatalog */
+"Qwen3 4B (recommended)" = "Qwen3 4B (recommended)";
+
+/* StatusItemController */
+"Raw: %@" = "Raw: %@";
+
+/* AppState */
+"Ready — hold %@ to dictate" = "Ready — hold %@ to dictate";
+
+/* ModelSetupWindow */
+"Recognizes your speech. Required. %@." = "Recognizes your speech. Required. %@.";
+
+/* AppState */
+"Recording (continuous) — tap %@ to finish" = "Recording (continuous) — tap %@ to finish";
+
+/* AppState */
+"Recording…" = "Recording…";
+
+/* AppState */
+"Reloading models… (you can dictate)" = "Reloading models… (you can dictate)";
+
+/* MainWindow, ModelSetupWindow */
+"Reloading the models after they are freed takes about 3 s." = "Reloading the models after they are freed takes about 3 s.";
+
+/* AppEnvironment */
+"Reopen %@ to change the language?" = "Reopen %@ to change the language?";
+
+/* AppEnvironment */
+"Reopen now" = "Reopen now";
+
+/* StatusItemController */
+"Retry the download" = "Retry the download";
+
+/* ModelResidency */
+"Right after dictating" = "Right after dictating";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⇧" = "right ⇧";
+
+/* TriggerKey (dictation key picker) */
+"Right ⇧ Shift" = "Right ⇧ Shift";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌘" = "right ⌘";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌘ Command" = "Right ⌘ Command";
+
+/* TriggerKey (the key's name inside a sentence: “Hold %@ to speak…”) */
+"right ⌥" = "right ⌥";
+
+/* TriggerKey (dictation key picker) */
+"Right ⌥ Option" = "Right ⌥ Option";
+
+/* SelectionEdit */
+"Selection changed — result in History" = "Selection changed — result in History";
+
+/* MainWindow */
+"Settings" = "Settings";
+
+/* AppEnvironment */
+"Some models couldn't be deleted" = "Some models couldn't be deleted";
+
+/* MainWindow, StatusItemController */
+"Sounds" = "Sounds";
+
+/* ModelSetupWindow */
+"Start" = "Start";
+
+/* AppEnvironment */
+"Switching model…" = "Switching model…";
+
+/* AppLanguage */
+"System" = "System";
+
+/* AppEnvironment */
+"Text copied — paste with ⌘V" = "Text copied — paste with ⌘V";
+
+/* MainWindow, StatusItemController */
+"Text model" = "Text model";
+
+/* MainWindow */
+"Text selected on a page or in read-only text opens the answer in a panel, which stays open when you click outside: click in a text box and tap “Paste”, or “Copy”. A forgotten selection opens it too: click elsewhere before dictating." = "Text selected on a page or in read-only text opens the answer in a panel, which stays open when you click outside: click in a text box and tap “Paste”, or “Copy”. A forgotten selection opens it too: click elsewhere before dictating.";
+
+/* AudioFileLoader */
+"The audio file is empty." = "The audio file is empty.";
+
+/* ModelDownloader */
+"the download of %@ is incomplete" = "the download of %@ is incomplete";
+
+/* AppEnvironment */
+"The files are deleted for good (they don't go to the Trash). In use and kept: %@. To use a deleted model again, it is downloaded again." = "The files are deleted for good (they don't go to the Trash). In use and kept: %@. To use a deleted model again, it is downloaded again.";
+
+/* MainWindow */
+"The models stay in memory only while you dictate: they load when you press %@ (about 3 s, while you speak) and leave right after." = "The models stay in memory only while you dictate: they load when you press %@ (about 3 s, while you speak) and leave right after.";
+
+/* AppEnvironment */
+"The new language is used the next time %@ opens." = "The new language is used the next time %@ opens.";
+
+/* AnswerPanel */
+"Thinking…" = "Thinking…";
+
+/* ModelSetupWindow */
+"This Mac has %@ of memory: freeing the models after 5 min without dictating gives memory back to other apps. Reloading takes about 3 s." = "This Mac has %@ of memory: freeing the models after 5 min without dictating gives memory back to other apps. Reloading takes about 3 s.";
+
+/* UnusedModels */
+"Tokenizer %@" = "Tokenizer %@";
+
+/* ModelSetupWindow */
+"Total to download: ~%@" = "Total to download: ~%@";
+
+/* ModelSetupWindow */
+"Transcription" = "Transcription";
+
+/* DictationPipeline */
+"Transcription failed." = "Transcription failed.";
+
+/* MainWindow, ModelSetupWindow, StatusItemController */
+"Try again" = "Try again";
+
+/* AppEnvironment */
+"Turning off the AI…" = "Turning off the AI…";
+
+/* UndoPill */
+"Undo" = "Undo";
+
+/* UndoPill */
+"Undo edit" = "Undo edit";
+
+/* UndoPill */
+"Undo the edit (⌘Z)" = "Undo the edit (⌘Z)";
+
+/* AudioFileLoader, AudioRecorder */
+"Unsupported audio format." = "Unsupported audio format.";
+
+/* MainWindow */
+"Unused models" = "Unused models";
+
+/* ModelMemoryState */
+"Voice model inactive — it loads when you dictate (~3 s)" = "Voice model inactive — it loads when you dictate (~3 s)";
+
+/* ModelMemoryState */
+"Voice model loaded in memory" = "Voice model loaded in memory";
+
+/* AppEnvironment */
+"Wait for the dictation to finish and try again" = "Wait for the dictation to finish and try again";
+
+/* AppEnvironment */
+"Wait for the dictation to finish to paste." = "Wait for the dictation to finish to paste.";
+
+/* AppDelegate */
+"Window" = "Window";
+
+/* MainWindow */
+"With text selected in an editable field, say what to do (“make it more formal”): the result replaces the selection. Don't like it? “Undo” on the pill (or ⌘Z)." = "With text selected in an editable field, say what to do (“make it more formal”): the result replaces the selection. Don't like it? “Undo” on the pill (or ⌘Z).";
+
+/* ModelCatalog */
+"~0.3–0.6 GB of memory (approximate)" = "~0.3–0.6 GB of memory (approximate)";
+
+/* ModelCatalog */
+"~2.4 GB of memory (approximate)" = "~2.4 GB of memory (approximate)";
+
+/* MainWindow */
+"· answer (not pasted)" = "· answer (not pasted)";
+
+/* MainWindow */
+"· edit not pasted (selection changed)" = "· edit not pasted (selection changed)";
+
+/* MainWindow */
+"· not pasted" = "· not pasted";
+
+/* MainWindow */
+"· question (no answer)" = "· question (no answer)";
+
+/* MainWindow */
+"· selection edited" = "· selection edited";
+
+/* StatusItemController */
+"⚠︎ Allow Accessibility…" = "⚠︎ Allow Accessibility…";
+
+/* StatusItemController */
+"⚠︎ Allow Microphone access…" = "⚠︎ Allow Microphone access…";
+
+/* Size units (ByteText) */
+"MB" = "MB";
+"GB" = "GB";
+
+/* Question mode (Task 5) */
+"%@ is answering your question" = "%@ is answering your question";
+"Answer from the local model — may contain mistakes" = "Answer from the local model — may contain mistakes";
+"Hold %@ and ask a question: the local model's answer appears in a panel, with “Paste” and “Copy”. Selected text goes along as context." = "Hold %@ and ask a question: the local model's answer appears in a panel, with “Paste” and “Copy”. Selected text goes along as context.";
+"Hold it and ask: the answer comes from the local model and is never pasted on its own." = "Hold it and ask: the answer comes from the local model and is never pasted on its own.";
+"Off" = "Off";
+"Question key" = "Question key";
+"Question key turned off: it is now the dictation key." = "Question key turned off: it is now the dictation key.";
+"Questions need a text model: with “No AI” there is no model to answer. Choose a text model to use them." = "Questions need a text model: with “No AI” there is no model to answer. Choose a text model to use them.";
+"Wait for the answer to finish (Esc stops it)" = "Wait for the answer to finish (Esc stops it)";
+"continuous · question" = "continuous · question";
+"question" = "question";
+
+/* File transcription (Task 6) */
+"Transcribe file…" = "Transcribe file…";
+"Transcribe a file" = "Transcribe a file";
+"Audio or video" = "Audio or video";
+"m4a, mp3, wav, mp4, mov… Or drop files on this window, or use “Open With” in the Finder." = "m4a, mp3, wav, mp4, mov… Or drop files on this window, or use “Open With” in the Finder.";
+"Choose audio or video files to transcribe" = "Choose audio or video files to transcribe";
+"Transcribe" = "Transcribe";
+"Waiting…" = "Waiting…";
+"Waiting for the models…" = "Waiting for the models…";
+"Waiting for the other file…" = "Waiting for the other file…";
+"Waiting for the dictation to finish…" = "Waiting for the dictation to finish…";
+"Transcribing… %lld%%" = "Transcribing… %lld%%";
+"Organizing… %lld%%" = "Organizing… %lld%%";
+"Summarizing… %lld%%" = "Summarizing… %lld%%";
+"Cancelled." = "Cancelled.";
+"Transcribe again" = "Transcribe again";
+"No speech found in the file." = "No speech found in the file.";
+"Transcript" = "Transcript";
+"Organized" = "Organized";
+"Summary" = "Summary";
+"Save .txt…" = "Save .txt…";
+"Summarize" = "Summarize";
+"Organizing and summarizing need a text model: with “No AI” there is no model to do them. Choose a text model to use them." = "Organizing and summarizing need a text model: with “No AI” there is no model to do them. Choose a text model to use them.";
+"Couldn't organize the text." = "Couldn't organize the text.";
+"Couldn't summarize the text." = "Couldn't summarize the text.";
+"%@ (organized).txt" = "%@ (organized).txt";
+"%@ (summary).txt" = "%@ (summary).txt";
+"Drop audio or video files here to transcribe them too." = "Drop audio or video files here to transcribe them too.";
+"· file: %@" = "· file: %@";
+"Wait for the file transcription to finish" = "Wait for the file transcription to finish";
+"This video has no audio track." = "This video has no audio track.";
+"This Mac can't decode this Ogg/Opus audio (the format of WhatsApp voice messages). Convert it to .m4a or .mp3 and try again." = "This Mac can't decode this Ogg/Opus audio (the format of WhatsApp voice messages). Convert it to .m4a or .mp3 and try again.";
+"This file can't be opened as audio or video." = "This file can't be opened as audio or video.";
+"Language" = "Language";
+"Transcribe again in %@? Organize and Summarize already use it." = "Transcribe again in %@? Organize and Summarize already use it.";
+"Parts kept as transcribed (the model couldn't organize them): %lld of %lld." = "Parts kept as transcribed (the model couldn't organize them): %lld of %lld.";
+"A file is being transcribed. Quit anyway?" = "A file is being transcribed. Quit anyway?";
+"The work in progress is lost; files already transcribed are in the History." = "The work in progress is lost; files already transcribed are in the History.";
+
+/* Updater, MainWindow, StatusItemController (automatic updates) */
+"Updates" = "Updates";
+"Check for updates automatically" = "Check for updates automatically";
+"Check now" = "Check now";
+"Check for updates now…" = "Check for updates now…";
+"Updates are off in this build." = "Updates are off in this build.";
+"Version %@ (%@)" = "Version %@ (%@)";
+"Update available: %@ %@…" = "Update available: %@ %@…";
+
+/* Credits (license and third-party notices) */
+"%@ is free software, released under %@." = "%@ is free software, released under %@.";
+"%@ uses these models and libraries under their own licenses. Their authors are not affiliated with %@ and do not endorse it." = "%@ uses these models and libraries under their own licenses. Their authors are not affiliated with %@ and do not endorse it.";
+"About" = "About";
+"Credits" = "Credits";
+"Credits…" = "Credits…";
+"Libraries" = "Libraries";
+"License" = "License";
+"Models" = "Models";
+"Only resolved while building; not part of the app." = "Only resolved while building; not part of the app.";
+"Source code" = "Source code";
+"The models are not part of the app: they are downloaded from Hugging Face the first time they are needed." = "The models are not part of the app: they are downloaded from Hugging Face the first time they are needed.";
+"Third-party models and libraries" = "Third-party models and libraries";
+
+/* Final review: license texts, history */
+"License text…" = "License text…";
+"Third-party license texts" = "Third-party license texts";
+"Third-party license texts…" = "Third-party license texts…";
+"· answer failed" = "· answer failed";

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleExecutable</key><string>Voxum</string>
+    <key>CFBundleIdentifier</key><string>io.github.gsb05br.voxum</string>
+    <key>CFBundleName</key><string>Voxum</string>
+    <key>CFBundleDisplayName</key><string>Voxum</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0.0</string>
+    <!-- Build number: an integer that only goes up (Sparkle compares it); scripts/release.sh bumps it. -->
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>LSUIElement</key><true/>
+    <!-- "Open With" in the Finder (spec §5): Viewer, Alternate rank, so Voxum is never the
+         default app for audio or video. -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key><string>Audio file</string>
+            <key>CFBundleTypeRole</key><string>Viewer</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key><array><string>public.audio</string></array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key><string>Video file</string>
+            <key>CFBundleTypeRole</key><string>Viewer</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key><array><string>public.movie</string></array>
+        </dict>
+    </array>
+    <!-- Sparkle (spec §6). SUPublicEDKey: the public half of the key from Sparkle's generate_keys
+         (see docs/RELEASING.md); while it is the placeholder the updater does not start and
+         release builds are refused. -->
+    <key>SUFeedURL</key><string>https://github.com/GSB05BR/voxum/releases/latest/download/appcast.xml</string>
+    <key>SUPublicEDKey</key><string>REPLACE_WITH_SPARKLE_PUBLIC_ED_KEY</string>
+    <key>SUEnableAutomaticChecks</key><true/>
+    <key>SUScheduledCheckInterval</key><integer>86400</integer>
+    <!-- Check the EdDSA signature of a downloaded update before unarchiving it. -->
+    <key>SUVerifyUpdateBeforeExtraction</key><true/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Your speech is turned into text locally, on your Mac.</string>
+</dict>
+</plist>

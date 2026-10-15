@@ -1,0 +1,72 @@
+# QA manual — Voxum
+
+- [ ] Primeira abertura: abre a janela principal; pede Microfone; orienta Acessibilidade; "Preparando…" → "Pronto".
+- [ ] Fluxo de permissões: com uma permissão faltando, a janela aparece e o botão leva ao ajuste certo; ao conceder, o status atualiza.
+- [ ] Janela principal pelo Finder/Spotlight/Launchpad, com o app fechado (cold) e já rodando.
+- [ ] Menu "Abrir Voxum…" abre a janela; "Abrir ao iniciar sessão" não abre janela no login.
+- [ ] Com a janela do Voxum na frente, segurar ⌥: a janela fecha, o app anterior volta ao foco, a pílula continua visível e o texto cola no app anterior.
+- [ ] Sem internet (Wi-Fi desligado): abrir o Voxum chega a "Pronto" e o ditado funciona (log: "whisper loaded from local folder", "text model loaded from local snapshot").
+- [ ] Segurar ⌥ direito (hold-to-talk) em Notas: pílula + som de início/fim; correção falada aplicada (exemplo "como você vai… como você está").
+- [ ] Toque duplo → contínuo; fala longa (> 30 s); próximo toque cola tudo.
+- [ ] Toque isolado curto não cola nada; o ícone volta a "Pronto" (não fica vermelho) e o próximo segurar grava.
+- [ ] Esc cancela no push-to-talk e no contínuo (nada colado); o ícone volta a "Pronto" e o próximo ditado funciona.
+- [ ] ⌥+E (acento) e ⌥+setas não disparam gravação, não tocam o som de início e não piscam a pílula.
+- [ ] Toque duplo enquanto "Preparando…" (ou sem permissão): nada grava e o ícone não fica vermelho.
+- [ ] Comando de composição: "crie uma mensagem de parabéns, curta e casual" gera a mensagem.
+- [ ] Pergunta ditada ("qual é a capital da Austrália") é colada como pergunta, sem resposta.
+- [ ] Silêncio total → nada colado (sem "Legendas pela comunidade Amara.org").
+- [ ] A colagem cai no app em foco: Notas, Safari (campo de busca), Mensagens, VS Code e Terminal.
+- [ ] Clipboard anterior restaurado após a colagem; gerenciador do app Notch não registra o texto.
+- [ ] Copiar algo logo depois de ditar não é sobrescrito pela restauração.
+- [ ] Dois ditados seguidos e rápidos: ambos colam, na ordem, sem perder texto.
+- [ ] Trocar o dispositivo de microfone durante a gravação (AirPods): não trava; grava/descarta de forma coerente e o próximo ditado funciona.
+- [ ] Limite de 5 minutos: a gravação encerra sozinha e o texto é processado.
+- [ ] "Organizar com IA" desligado → cola o texto bruto do Whisper.
+- [ ] Trocar o modelo de texto no menu → "Preparando…" → funciona com o novo modelo.
+- [ ] Histórico: clique copia o final; ⌥-clique copia o bruto. Edições guardam o texto reescrito pelo modelo; respostas e falas "não colado" também ficam lá.
+- [ ] Primeira execução com download do Whisper: depois do download, o status diz "Otimizando o modelo de voz para este Mac (só na primeira vez, ~3 min)…" até carregar.
+- [ ] "Logo após ditar": depois de cada ditado o indicador vira "Modelos inativos" e a memória cai no Monitor de Atividade; o próximo ⌥ recarrega junto com a fala (ditado curto espera ~3 s) e o texto é colado normalmente. Edição de seleção e janelinha de resposta também funcionam.
+- [ ] Liberar memória após inatividade: após o tempo escolhido, a memória cai no Monitor de Atividade; o próximo ditado funciona (recarga ~3 s) e o ícone mostra a ampulheta enquanto recarrega (quando não está gravando).
+- [ ] "Abrir ao iniciar sessão" liga/desliga (conferir em Ajustes → Geral → Itens de Início).
+- [ ] Rebuild + reinstalar não pede as permissões de novo.
+- [ ] Latência (`/usr/bin/log show --last 5m --predicate 'subsystem == "io.github.gsb05br.voxum"' --style compact`): ditado curto com total ≈ 2 s ("Voxum: transcribe … total …").
+- [ ] Editar seleção (Notas, via Acessibilidade): selecionar um parágrafo, segurar ⌥ e dizer "deixa mais formal" → a pílula mostra "editando seleção" e o texto editado substitui a seleção (log "selection via accessibility (N chars)", "… (edit)").
+- [ ] Editar seleção num textarea do Chrome e no Slack/Discord, inclusive a 1ª vez depois de abrir o Voxum: a 1ª captura do app vem por ⌘C ("selection via ⌘C (N chars, readOnly)"), pede a árvore de Acessibilidade ("accessibility tree requested for …") e, enquanto você fala, deve logar "selection reclassified editable after N re-read(s)" e editar (pílula "editando seleção"). Se logar "selection stays read-only", abre a janelinha: anotar. Da 2ª vez em diante: "selection via accessibility (…, editable)".
+- [ ] VS Code / JetBrains / Sublime / Zed: ⌘C nunca é disparado (ditado normal com ou sem seleção), sem modo leitor de tela.
+- [ ] Obsidian (ou outro editor Electron com CodeMirror/Monaco), 1ª vez depois de abrir o app/Voxum: cursor numa linha com texto, nada selecionado, ditar → deve colar o ditado (log "selection via ⌘C (…; focus lookup: noFocusedElement)" e "selection reclassified as none after N re-read(s) (editable field, empty selection twice)", N ≥ 2). Se abrir a janelinha, anotar o "focus lookup" do log.
+- [ ] Com a janelinha de resposta aberta (parada), digitar ⌥+E em outro app → a janelinha continua aberta; segurar ⌥ para ditar → ela fecha (~0,2 s). Clicar dentro da janelinha e depois ditar → o texto cola no app.
+- [ ] Depois de uma captura que loga `selection via ⌘C`, soltar o ⌥ encerra a gravação (o ⌥-up sintético não pode "engolir" o real).
+- [ ] Fallback ⌘C com ⌥ segurado (página do Chrome cujo texto não vem por Acessibilidade): o DevTools NÃO abre.
+- [ ] Texto de página no Chrome / tweet no X: selecionar, segurar ⌥ e dizer "traduz pra português" → janelinha de vidro perto do mouse com "Pensando…" e a resposta chegando aos poucos; nada é colado sozinho; "Copiar" copia ("Copiado" por um instante) e fecha; ⌘C (depois de clicar no texto) copia e não fecha; fecha com Esc e o ✕; clicar fora NÃO fecha. Arrastar pelo fundo move a janelinha e ela continua crescendo a partir de onde ficou.
+- [ ] Janelinha do tamanho do texto: resposta curta → janelinha pequena; resposta longa → cresce sem pular (a borda perto do mouse fica parada) até ~560 pt de largura e ~60% da altura da tela, e depois rola. Conferir no modo claro e no escuro.
+- [ ] "Colar" com o foco ainda na página do Safari (seleção só leitura): nada é colado, o clipboard não muda, a janelinha fica aberta com "Clique numa caixa de texto e toque em Colar" (some em ~6 s).
+- [ ] Clicar na caixa de resposta de outro app (Mail, Mensagens, um campo do Chrome) e depois em "Colar": a janelinha fecha e a resposta entra no cursor; o clipboard anterior volta.
+- [ ] Saída do Terminal + "o que significa isso?" + "Colar" com o Terminal em foco: nada é colado (o Terminal não é caixa de texto editável) e a janelinha avisa.
+- [ ] Return com a janelinha aberta SEM ter clicado nela: o Return vai para o app de trás como sempre (não cola, a janelinha não intercepta). Depois de clicar no texto da janelinha, Return = "Colar".
+- [ ] "Colar" enquanto outro ditado grava ou processa: nada é colado e a janelinha diz para aguardar (o aviso some sozinho; uma "Resposta incompleta" volta a aparecer depois dele).
+- [ ] Resposta longa chegando: rolar para cima para ler → o texto não volta sozinho para o fim; rolar até o fim → volta a acompanhar.
+- [ ] Seleção num campo tratado como só leitura + "deixa mais formal": a janelinha traz só o texto reescrito (nunca "O texto é uma mensagem…").
+- [ ] Depois de uma edição colada (Notas, "deixa mais formal"): pílula "Desfazer ⌘Z" no lugar da pílula de gravação; clicar nela desfaz a edição no Notas, que continua em foco (o cursor não sai do campo). Some sozinha em ~6 s, ao digitar, ao clicar em outro lugar e ao segurar ⌥ de novo. Ditado sem seleção não mostra a pílula.
+- [ ] Com a pílula "Desfazer" visível, trocar de app pelo Dock/Mission Control (sem teclado) e clicar nela → nada é enviado ao outro app (log "undo not sent") e a pílula avisa "Não desfeito".
+- [ ] Logo depois de a edição entrar, apertar ⌘Z você mesmo (antes de a pílula aparecer) → a pílula não aparece; se aparecer e for clicada, nada mais é desfeito (o texto antes da edição fica intacto).
+- [ ] Edição colada, depois digitar algo num campo com Secure Input ligado (ou clicar com o botão do meio) e clicar em "Desfazer" → nada é desfeito; aviso "Não desfeito — …".
+- [ ] VoiceOver ligado: a edição anuncia "Edição aplicada. Desfazer com ⌘Z."; a janelinha anuncia "respondendo" e "Resposta pronta"; ela aparece como "Voxum — resposta" na lista de janelas.
+- [ ] macOS 14/15 (sem Liquid Glass): janelinha e pílula com o vidro de reserva (NSVisualEffectView), cantos arredondados, botões legíveis no claro e no escuro.
+- [ ] Saída do Terminal selecionada + "o que significa isso?" → janelinha, nada colado no Terminal.
+- [ ] Pergunta cuja resposta não está no texto selecionado → a janelinha diz que o texto não informa (não inventa).
+- [ ] Esc durante "Processando…" de uma edição: nada colado, seleção intacta, a fala aparece no Histórico como "não colado".
+- [ ] Depois da captura por ⌘C o clipboard anterior continua igual (colar com ⌘V mostra o conteúdo antigo).
+- [ ] Mesmo com os modelos recarregando (memória liberada após inatividade) no Slack: o clipboard volta igual. Se o log disser "late copy: selection unknown…", nada é colado e a fala fica no Histórico.
+- [ ] Notes: selecionar o parágrafo 1, ditar "traduz pro inglês" e, enquanto processa, selecionar o parágrafo 2 (ou trocar de app) → o parágrafo 2 fica intacto, pílula "Seleção mudou — resultado no Histórico", tradução no Histórico ("edição não colada").
+- [ ] Mesma cena, mas ditando de novo no parágrafo 2 enquanto o 1º processa: o 2º pedido edita o parágrafo 2 (não cola a instrução) e o 1º não é colado.
+- [ ] Ditado comum com seleção ("obrigado pela ajuda") substitui a seleção pelo ditado; pergunta ditada com seleção é colada como pergunta.
+- [ ] IA desligada com seleção: o ditado cru substitui a seleção.
+- [ ] Falha da IA com seleção (ex.: seleção longa + modelo descarregado/lento): pílula "Não consegui editar o texto" e a seleção continua intacta.
+- [ ] Sem seleção (cursor num campo vazio): nenhum ⌘C é disparado (sem bipe), ditado normal.
+- [ ] Instalação existente (modelos no disco): abrir o app não mostra "Escolha seus modelos" (log "models already on disk; model choice confirmed").
+- [ ] Primeira abertura (testar com `VOXUM_DATA_DIR`, ver `docs/BUILD.md`): a janela mostra Whisper ~620 MB, Qwen3 4B ~2,1 GB / Sem IA, total (2,7 GB / 620 MB) e espaço livre; com `VOXUM_SIMULATED_RAM_GB=8` pré-seleciona "5 min" com a nota.
+- [ ] "Baixar e começar": barra e "X MB de Y" avançam; "Cancelar" volta para a escolha; sem rede → mensagem + "Tentar de novo" (retoma o download).
+- [ ] Ao terminar: a janela fecha, a principal abre e o status chega a "Pronto" (log "models ready").
+- [ ] Sem IA: "Organizar com IA" fica desabilitado com a explicação; ditado cola o texto bruto; com seleção, o ditado substitui a seleção; Monitor de Atividade mostra só o Whisper (~0,2 GB contra ~2,6 GB com Qwen).
+- [ ] Trocar Sem IA → Qwen3 4B sem o modelo no disco: baixa com progresso (Ajustes e menu), dá para ditar durante o download, troca sozinho ao terminar; "Cancelar" mantém Sem IA.
+- [ ] "Apagar modelos não usados…": o alerta lista nomes e tamanhos, "Cancelar" é o padrão; os modelos em uso nunca aparecem na lista.
