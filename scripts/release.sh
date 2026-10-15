@@ -202,7 +202,12 @@ if [ "$BUILD" != "$CURRENT_BUILD" ] || [ "$VERSION" != "$CURRENT_VERSION" ]; the
         cp "$PLIST" "$BACKUP"
         trap 'cp "$BACKUP" "$PLIST"; rm -f "$BACKUP"; echo "dry run: $PLIST restored" >&2' EXIT
     fi
-    /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $VERSION" -c "Set :CFBundleVersion $BUILD" "$PLIST"
+    # Edit the two values in place: PlistBuddy would rewrite the whole file and drop its comments.
+    VERSION="$VERSION" BUILD="$BUILD" perl -0pi -e '
+        s{(<key>CFBundleShortVersionString</key><string>)[^<]*}{$1$ENV{VERSION}};
+        s{(<key>CFBundleVersion</key><string>)[^<]*}{$1$ENV{BUILD}};' "$PLIST"
+    [ "$(plist CFBundleShortVersionString)" = "$VERSION" ] && [ "$(plist CFBundleVersion)" = "$BUILD" ] \
+        || die "could not set version $VERSION (build $BUILD) in $PLIST"
 fi
 echo "release $VERSION (build $BUILD) of $NAME"
 
